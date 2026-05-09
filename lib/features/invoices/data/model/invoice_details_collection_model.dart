@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/invoices/domain/entities/invoice_details_collection_entity.dart';
+import 'package:DairyVikas/features/invoices/domain/entities/invoice_details_collection_entity.dart';
 
 class InvoiceDetailsCollectionModel extends InvoiceDetailsCollectionEntity {
   const InvoiceDetailsCollectionModel({

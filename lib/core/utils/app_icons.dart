@@ -1,5 +1,5 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/core/utils/assets_paths.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/core/utils/assets_paths.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -316,6 +316,14 @@ class AppIcons {
 
   static Widget appUpdate({double size = 13, Color? color}) {
     return Image.asset(AssetsPaths.appUpdate, height: size.h, color: color);
+  }
+
+  static Widget whatsapp({double size = 13, Color? color}) {
+    return Image.asset(AssetsPaths.whatsapp, height: size.h, color: color);
+  }
+
+  static Widget share({double size = 13, Color? color}) {
+    return Image.asset(AssetsPaths.share, height: size.h, color: color);
   }
 
   static Widget customerSupport({double size = 13, Color? color}) {

@@ -1,4 +1,4 @@
-import 'package:dairysathi/core/network/api_endpoints.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
 import 'package:dio/dio.dart';
 
 class NoticeDataSource {

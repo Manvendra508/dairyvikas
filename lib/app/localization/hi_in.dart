@@ -534,7 +534,7 @@ const Map<String, String> hiIN = {
   "txnt_id": "लेन-देन आईडी",
   "d&t": "दिनांक और समय",
   "payment_method": "भुगतान का तरीका",
-  "plan": "योजना",
+  "plan": "सदस्यता",
   "payment_status": "भुगतान स्थिति",
   "download_receipt": "रसीद डाउनलोड करें",
   "go_to_dashboard": "डैशबोर्ड पर जाएं",
@@ -548,4 +548,40 @@ const Map<String, String> hiIN = {
       "हमारी सहायता टीम 24/7 उपलब्ध है\nभुगतान से संबंधित सवालों के लिए",
   "retry_payment": "भुगतान पुनः प्रयास करें",
   "success": "सफल",
+
+  // refer and earn strings
+
+  // refer and earn strings
+  "refer_and_earn": "रेफर और कमाएं",
+
+  "friends_bring_rewards": "दोस्त लाएं, इनाम पाएं!",
+
+  "refer_description":
+      "अपने दोस्तों को रेफर करें और उन्हें @credits2 क्रेडिट मिलेंगे तथा उनकी पहली पेमेंट पर आपको @credits क्रेडिट मिलेंगे।",
+
+  "credits": "@credits क्रेडिट",
+
+  "your_referral_code": "आपका रेफरल कोड",
+
+  "copy": "कॉपी करें",
+
+  "how_it_works": "यह कैसे काम करता है",
+
+  "invite_friends": "दोस्तों को आमंत्रित करें",
+
+  "invite_friends_desc": "अपना रेफरल कोड या लिंक अपने दोस्तों के साथ साझा करें",
+
+  "they_register": "वे रजिस्टर करते हैं",
+
+  "they_register_desc":
+      "आपका दोस्त आपके रेफरल कोड या लिंक का उपयोग करके रजिस्टर करता है और अपनी पहली सदस्यता खरीदता है",
+
+  "you_get_credits": "आपको @credits क्रेडिट मिलेंगे",
+
+  "you_get_credits_desc":
+      "जो भी दोस्त आपके रेफरल कोड या लिंक का उपयोग करके जुड़ता है और पहली पेमेंट करता है, उसके लिए आपको @credits क्रेडिट मिलेंगे",
+
+  "whatsapp_share": "व्हाट्सऐप शेयर",
+
+  "share_link": "लिंक शेयर करें",
 };

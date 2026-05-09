@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/food/domain/entity/stock_entity.dart';
+import 'package:DairyVikas/features/food/domain/entity/stock_entity.dart';
 
 class StockModel extends StockEntity {
   StockModel({

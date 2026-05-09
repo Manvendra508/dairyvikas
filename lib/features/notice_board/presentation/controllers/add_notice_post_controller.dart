@@ -1,11 +1,11 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/notice_board/domain/usecases/add_notice_post_usecase.dart';
-import 'package:dairysathi/features/notice_board/domain/usecases/delete_notice_post_usecase.dart';
-import 'package:dairysathi/features/notice_board/domain/usecases/update_notice_usecase.dart';
-import 'package:dairysathi/features/notice_board/presentation/controllers/notice_posts_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/notice_board/domain/usecases/add_notice_post_usecase.dart';
+import 'package:DairyVikas/features/notice_board/domain/usecases/delete_notice_post_usecase.dart';
+import 'package:DairyVikas/features/notice_board/domain/usecases/update_notice_usecase.dart';
+import 'package:DairyVikas/features/notice_board/presentation/controllers/notice_posts_controller.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';

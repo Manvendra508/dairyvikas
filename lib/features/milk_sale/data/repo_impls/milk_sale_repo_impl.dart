@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/milk_sale/data/datasources/milk_sale_ds.dart';
-import 'package:dairysathi/features/milk_sale/domain/repository/milk_buyer_repo.dart';
+import 'package:DairyVikas/features/milk_sale/data/datasources/milk_sale_ds.dart';
+import 'package:DairyVikas/features/milk_sale/domain/repository/milk_buyer_repo.dart';
 
 class MilkBuyerRepoImpl implements MilkSaleRepo {
   final MilkSaleDataSource milkBuyerDataSource;

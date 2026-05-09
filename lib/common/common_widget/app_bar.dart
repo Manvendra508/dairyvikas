@@ -1,20 +1,20 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
-class DairySathiAppBar extends StatelessWidget {
+class DairyVikasAppBar extends StatelessWidget {
   final double? height;
   final String title;
   final String? dairyName;
 
   final bool showLeading;
   final Widget? trailingWidget;
-  const DairySathiAppBar({
+  const DairyVikasAppBar({
     super.key,
     this.height,
     required this.title,

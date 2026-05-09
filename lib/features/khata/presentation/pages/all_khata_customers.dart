@@ -1,16 +1,16 @@
 import 'dart:math';
 
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/khata/data/models/khatabook_user_model.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/khata/data/models/khatabook_user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -37,7 +37,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
           child: Obx(
             () => Visibility(
               visible: !_allKhataCustomersController.isLoading.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_allKhataCustomersController.hasError.value,
                 replacement: RetryWidget(
@@ -50,7 +50,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
                   children: [
                     Gap.verticalGap(10),
 
-                    DairySathiAppBar(
+                    DairyVikasAppBar(
                       title: 'khata dashboard',
                       dairyName: AppState.dairyName.capitalize!,
 

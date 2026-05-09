@@ -1,11 +1,11 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/invoices/data/model/invoice_details_collection_model.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/invoices/data/model/invoice_details_collection_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
@@ -270,8 +270,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
                 // text:
                 //     'total of ${DateFormat('dd MMM').format(DateTime.parse(date))}',
                 text: 'total_of_date'.trParams({
-                  "date":
-                      '${DateFormat('dd MMM').format(DateTime.parse(date))}',
+                  "date": DateFormat('dd MMM').format(DateTime.parse(date)),
                 }),
                 fontWeight: FontWeight.w700,
                 fontSize: 11.sp,

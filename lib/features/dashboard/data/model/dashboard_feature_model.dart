@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/dashboard/domain/entities/dashboard_feature_entity.dart';
+import 'package:DairyVikas/features/dashboard/domain/entities/dashboard_feature_entity.dart';
 
 class DashboardFeatureModel extends DashboardFeatureEntity {
   DashboardFeatureModel({

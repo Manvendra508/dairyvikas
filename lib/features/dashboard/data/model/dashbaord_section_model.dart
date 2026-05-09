@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/dashboard/domain/entities/dashboard_section_entity.dart';
+import 'package:DairyVikas/features/dashboard/domain/entities/dashboard_section_entity.dart';
 
 import 'dashboard_feature_model.dart';
 

@@ -1,14 +1,14 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart' show AppExceptionHandler;
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_validations.dart';
-import 'package:dairysathi/features/food/data/models/sale_model.dart';
-import 'package:dairysathi/features/food/data/models/supplier_buyer_model.dart';
-import 'package:dairysathi/features/food/presentation/controllers/food_sales_controller.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_buyer_model.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart' show AppExceptionHandler;
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_validations.dart';
+import 'package:DairyVikas/features/food/data/models/sale_model.dart';
+import 'package:DairyVikas/features/food/data/models/supplier_buyer_model.dart';
+import 'package:DairyVikas/features/food/presentation/controllers/food_sales_controller.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_buyer_model.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 

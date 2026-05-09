@@ -1,6 +1,6 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/features/rate_cart/domain/entities/increase_step_entity.dart';
-import 'package:dairysathi/features/rate_cart/domain/entities/total_solid_step_entity.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/increase_step_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/total_solid_step_entity.dart';
 import 'package:get/get.dart';
 
 class RateChartCommonFunctionController extends GetxController

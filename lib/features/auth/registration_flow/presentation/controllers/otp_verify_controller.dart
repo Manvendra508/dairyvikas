@@ -1,14 +1,14 @@
 // lib/presentation/controllers/auth/login_controller.dart
 import 'dart:async';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/local_datasources/secured_storage_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/usecases/resend_otp_usecase.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/usecases/verify_otp_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/usecases/resend_otp_usecase.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/usecases/verify_otp_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

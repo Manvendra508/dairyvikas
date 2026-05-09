@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/dashboard/data/model/dashboard_data_model.dart';
-import 'package:dairysathi/features/dashboard/domain/entities/dashboard_response_entity.dart';
+import 'package:DairyVikas/features/dashboard/data/model/dashboard_data_model.dart';
+import 'package:DairyVikas/features/dashboard/domain/entities/dashboard_response_entity.dart';
 
 class DashbaordResponseModel extends DashboardResponseEntity {
   DashbaordResponseModel({

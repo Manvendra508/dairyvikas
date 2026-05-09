@@ -1,10 +1,10 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/khata/domain/usecases/delete_khatacustomer_usecase.dart';
-import 'package:dairysathi/features/khata/domain/usecases/update_khatacustomer_usecase.dart';
-import 'package:dairysathi/features/khata/presentation/controllers/all_khata_customers_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/delete_khatacustomer_usecase.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/update_khatacustomer_usecase.dart';
+import 'package:DairyVikas/features/khata/presentation/controllers/all_khata_customers_controller.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

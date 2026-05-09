@@ -1,10 +1,10 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/food/data/models/item_model.dart';
-import 'package:dairysathi/features/food/domain/usecases/add_item_usecase.dart';
-import 'package:dairysathi/features/food/domain/usecases/get_all_items_usecase.dart';
-import 'package:dairysathi/features/food/domain/usecases/update_item_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/food/data/models/item_model.dart';
+import 'package:DairyVikas/features/food/domain/usecases/add_item_usecase.dart';
+import 'package:DairyVikas/features/food/domain/usecases/get_all_items_usecase.dart';
+import 'package:DairyVikas/features/food/domain/usecases/update_item_usecase.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

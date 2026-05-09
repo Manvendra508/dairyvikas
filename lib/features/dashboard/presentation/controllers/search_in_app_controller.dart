@@ -1,8 +1,8 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/dashboard/data/model/recent_search_model.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/dashboard/data/model/recent_search_model.dart';
 import 'package:get/get.dart';
 
 class SearchInAppController extends GetxController with CommonMixin {

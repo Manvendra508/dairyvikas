@@ -1,6 +1,6 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart' show AppState;
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart' show AppState;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

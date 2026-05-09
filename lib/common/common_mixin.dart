@@ -2,13 +2,13 @@
 
 import 'dart:io';
 
-import 'package:dairysathi/app/extensions/datetime_ext.dart';
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/photo_thought_widget.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/local_datasources/secured_storage_service.dart';
-import 'package:dairysathi/core/network/api_endpoints.dart';
+import 'package:DairyVikas/app/extensions/datetime_ext.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/photo_thought_widget.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:file_picker/file_picker.dart';
@@ -17,11 +17,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
@@ -642,5 +644,36 @@ mixin CommonMixin {
   String formatPrice(String price) {
     final number = num.tryParse(price) ?? 0;
     return NumberFormat('#,##0', 'en_IN').format(number);
+  }
+
+  Future<void> openWhatsApp({
+    required String phone,
+    String message = '',
+  }) async {
+    final Uri uri = Uri.parse(
+      "https://wa.me/$phone?text=${Uri.encodeComponent(message)}",
+    );
+
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      debugPrint("WhatsApp not installed");
+    }
+  }
+
+  Future<void> shareLink(RxBool isSharing) async {
+    if (isSharing.value) return;
+
+    isSharing.value = true;
+
+    try {
+      await SharePlus.instance.share(
+        ShareParams(text: 'Check out my website https://youtube.com'),
+      );
+
+      await Future.delayed(const Duration(seconds: 1));
+    } finally {
+      isSharing.value = false;
+    }
   }
 }

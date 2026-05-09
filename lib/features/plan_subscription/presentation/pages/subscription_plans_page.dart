@@ -1,13 +1,13 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/plan_subscription/data/model/subscription_plan_model.dart';
-import 'package:dairysathi/features/plan_subscription/presentation/controllers/subscription_plan_controller.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/plan_subscription/data/model/subscription_plan_model.dart';
+import 'package:DairyVikas/features/plan_subscription/presentation/controllers/subscription_plan_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -33,7 +33,7 @@ class SubscriptionPlansPage extends GetView<SubscriptionPlanController>
             padding: EdgeInsets.symmetric(vertical: 10.h),
             child: Visibility(
               visible: !_subscriptionPlanController.isLoading.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_subscriptionPlanController.hasError.value,
                 replacement: RetryWidget(
@@ -47,7 +47,7 @@ class SubscriptionPlansPage extends GetView<SubscriptionPlanController>
                       children: [
                         Gap.verticalGap(10),
 
-                        DairySathiAppBar(
+                        DairyVikasAppBar(
                           title: 'subscriptions',
                           dairyName: AppState.dairyName.capitalize!,
                         ),

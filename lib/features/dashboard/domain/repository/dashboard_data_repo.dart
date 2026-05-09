@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/dashboard/domain/entities/dashboard_response_entity.dart';
+import '../../data/model/dashbaord_response_model.dart';
 
 abstract class DashboardDataRepo {
-  Future<DashboardResponseEntity> fetchDashboardData(String dairyId);
+  Future<DashbaordResponseModel> fetchDashboardData(String dairyId);
 }

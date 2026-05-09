@@ -1,12 +1,12 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart' show AppExceptionHandler;
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_validations.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
-import 'package:dairysathi/features/milk_suppliers/domain/usecases/add_milk_supplier_usecase.dart';
-import 'package:dairysathi/features/milk_suppliers/domain/usecases/update_milk_suppliers_usecase.dart';
-import 'package:dairysathi/features/milk_suppliers/presentation/controllers/get_milk_suppliers_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart' show AppExceptionHandler;
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_validations.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/features/milk_suppliers/domain/usecases/add_milk_supplier_usecase.dart';
+import 'package:DairyVikas/features/milk_suppliers/domain/usecases/update_milk_suppliers_usecase.dart';
+import 'package:DairyVikas/features/milk_suppliers/presentation/controllers/get_milk_suppliers_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 

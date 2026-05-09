@@ -1,7 +1,7 @@
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/plan_subscription/presentation/controllers/subscription_plan_controller.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/plan_subscription/presentation/controllers/subscription_plan_controller.dart';
 import 'package:get/get.dart';
 
 class PaymentCotnroller extends GetxController {

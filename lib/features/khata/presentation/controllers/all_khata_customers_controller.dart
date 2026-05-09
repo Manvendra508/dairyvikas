@@ -1,8 +1,8 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/features/khata/data/models/khatabook_user_model.dart';
-import 'package:dairysathi/features/khata/domain/usecases/get_khatabook_customers.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/features/khata/data/models/khatabook_user_model.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/get_khatabook_customers.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

@@ -1,5 +1,5 @@
-import 'package:dairysathi/app/extensions/string_ext.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/app/extensions/string_ext.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

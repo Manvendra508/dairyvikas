@@ -1,15 +1,15 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart' show AppState;
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/invoices/data/model/invoice_model.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/genrate_invoice_usecase.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/get_all_invoices_usecase.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/mark_paid_invoice_usecase.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/mark_unpaid_invoice.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_suppliers_response_model.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart' show AppState;
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/invoices/data/model/invoice_model.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/genrate_invoice_usecase.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/get_all_invoices_usecase.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/mark_paid_invoice_usecase.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/mark_unpaid_invoice.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_suppliers_response_model.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
@@ -278,9 +278,9 @@ class AllInvoiceController extends GetxController with CommonMixin {
 
   String _formatAmount(double amount) {
     if (amount < 0) {
-      return "${amount.abs().toStringAsFixed(2)}"; // or "(-₹xx)"
+      return amount.abs().toStringAsFixed(2); // or "(-₹xx)"
     } else {
-      return "${amount.toStringAsFixed(2)}";
+      return amount.toStringAsFixed(2);
     }
   }
 

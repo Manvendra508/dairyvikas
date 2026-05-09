@@ -1,20 +1,20 @@
 import 'dart:convert';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_validations.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/usecases/get_dairy_setting_data_usecase.dart'
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_validations.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/usecases/get_dairy_setting_data_usecase.dart'
     show GetDairySettingDataUsecase;
-import 'package:dairysathi/features/rate_cart/domain/entities/increase_step_entity.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/add_ratechart_usecase.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/update_rate_chart_usecase.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/upload_excel_usecase.dart';
-import 'package:dairysathi/features/rate_cart/presentation/chart_helpers/rate_chart_mapper.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_charts/fat_snf_rate_per_kg.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/increase_step_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/add_ratechart_usecase.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/update_rate_chart_usecase.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/upload_excel_usecase.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/chart_helpers/rate_chart_mapper.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_charts/fat_snf_rate_per_kg.dart';
 import 'package:dio/dio.dart' as fd;
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/widgets.dart';

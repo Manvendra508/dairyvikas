@@ -103,6 +103,7 @@ class AssetsPaths {
   static const String about = '${pngPath}about.png';
   static const String transaction = '${pngPath}transaction.png';
   static const String appUpdate = '${pngPath}app_update.png';
+  static const String whatsapp = '${pngPath}whatsapp1.png';
 
   // gifs
   static const String loaderGif = '${gifPath}loader.gif';
@@ -117,4 +118,5 @@ class AssetsPaths {
   static const String paymentSuccessAnimation =
       '${lottiesPath}payment_success.json';
   static const String noInternet = '${lottiesPath}no_internet.json';
+  static const String referAndEarn = '${lottiesPath}refer_earn.json';
 }

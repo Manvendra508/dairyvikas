@@ -46,4 +46,5 @@ class RouteNames {
   static const String searchInApp = '/search_in_app';
   static const String settings = '/settings';
   static const String transactionHistory = '/transaction_history';
+  static const String referAndEarn = '/refer_and_earn';
 }

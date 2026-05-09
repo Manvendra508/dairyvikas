@@ -1,11 +1,11 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart'
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart'
     show SharedPrefsService;
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/usecases/get_dairy_setting_data_usecase.dart';
-import 'package:dairysathi/features/profile_and_settings/domain/usecases/get_existing_setting_data_usecase.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/usecases/get_dairy_setting_data_usecase.dart';
+import 'package:DairyVikas/features/profile_and_settings/domain/usecases/get_existing_setting_data_usecase.dart';
 import 'package:get/get.dart';
 
 import '../core/error/exceptions.dart';

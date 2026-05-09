@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:dairysathi/features/rate_cart/domain/entities/increase_step_entity.dart';
-import 'package:dairysathi/features/rate_cart/domain/entities/rate_step_entity.dart';
-import 'package:dairysathi/features/rate_cart/domain/entities/total_solid_step_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/increase_step_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/rate_step_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/total_solid_step_entity.dart';
 
 class AddUpdateChartControllerHelper {
   static List<List<dynamic>> parseStepsFromJson(

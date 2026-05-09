@@ -1,8 +1,8 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/features/profile_and_settings/domain/usecases/update_dairy_setting_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/features/profile_and_settings/domain/usecases/update_dairy_setting_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

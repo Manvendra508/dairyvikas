@@ -1,11 +1,11 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_version_text.dart';
-import 'package:dairysathi/common/common_widget/message_box.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/gap.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_version_text.dart';
+import 'package:DairyVikas/common/common_widget/message_box.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -30,7 +30,7 @@ class RegisterVendorPage extends GetView<RegisterVendorController> {
           child: Column(
             children: [
               Gap.verticalGap(12.h),
-              DairySathiAppBar(title: 'personal_detail'),
+              DairyVikasAppBar(title: 'personal_detail'),
               Gap.verticalGap(12.h),
 
               _buildPeronalDetailsForm(),

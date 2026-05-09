@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/dairy_setting_data_response_entity.dart';
 
 class DairySettingDataResponseModel extends DairySettingDataResponseEntity {
   DairySettingDataResponseModel({

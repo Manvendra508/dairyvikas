@@ -1,15 +1,15 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_version_text.dart';
-import 'package:dairysathi/common/common_widget/network_image.dart';
-import 'package:dairysathi/common/common_widget/select_bool_option_widget.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart' show AppState;
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/other_services/auth_service.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_version_text.dart';
+import 'package:DairyVikas/common/common_widget/network_image.dart';
+import 'package:DairyVikas/common/common_widget/select_bool_option_widget.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart' show AppState;
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/other_services/auth_service.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,20 +18,20 @@ import 'package:get/get.dart';
 import '../../core/local_datasources/secured_storage_service.dart';
 import '../../core/utils/gap.dart';
 
-class DairySathiAppDrawer extends StatefulWidget {
+class DairyVikasAppDrawer extends StatefulWidget {
   final String district;
   final String state;
-  const DairySathiAppDrawer({
+  const DairyVikasAppDrawer({
     super.key,
     required this.district,
     required this.state,
   });
 
   @override
-  State<DairySathiAppDrawer> createState() => _DairySathiAppDrawerState();
+  State<DairyVikasAppDrawer> createState() => _DairyVikasAppDrawerState();
 }
 
-class _DairySathiAppDrawerState extends State<DairySathiAppDrawer>
+class _DairyVikasAppDrawerState extends State<DairyVikasAppDrawer>
     with CommonMixin {
   final dio = Dio();
   final authSerive = AuthService();

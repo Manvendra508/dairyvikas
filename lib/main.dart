@@ -1,6 +1,6 @@
 // lib/main.dart
-import 'package:dairysathi/app/di/injection.dart';
-import 'package:dairysathi/core/other_services/network_service.dart';
+import 'package:DairyVikas/app/di/injection.dart';
+import 'package:DairyVikas/core/other_services/network_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -16,6 +16,6 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]).then((_) {
-    runApp(DairySathi(networkService: networkService));
+    runApp(DairyVikas(networkService: networkService));
   });
 }

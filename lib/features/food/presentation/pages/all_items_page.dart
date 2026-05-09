@@ -1,14 +1,14 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/food/data/models/item_model.dart';
-import 'package:dairysathi/features/food/presentation/controllers/get_all_items_controller.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/food/data/models/item_model.dart';
+import 'package:DairyVikas/features/food/presentation/controllers/get_all_items_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -33,7 +33,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
           child: Obx(
             () => Visibility(
               visible: !_allItemsController.isLoading.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_allItemsController.hasError.value,
                 replacement: RetryWidget(
@@ -45,7 +45,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                   children: [
                     Gap.verticalGap(10),
 
-                    DairySathiAppBar(
+                    DairyVikasAppBar(
                       title: 'all_items',
                       dairyName: AppState.dairyName.capitalize!,
 
@@ -267,7 +267,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                               Gap.horizentalGap(5),
                               TextWidget(
                                 text: item.createdByVendorId == null
-                                    ? 'DairySathi'
+                                    ? 'DairyVikas'
                                     : 'added_by_you',
                                 fontSize: 10.sp,
                                 textColor: AppColors.grey600,

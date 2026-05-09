@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/collection/domain/usecases/get_collection_adjusments_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/get_collection_adjusments_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

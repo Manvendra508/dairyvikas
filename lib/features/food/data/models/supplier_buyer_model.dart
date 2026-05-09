@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/food/domain/entity/supplier_buyer_entity.dart';
+import 'package:DairyVikas/features/food/domain/entity/supplier_buyer_entity.dart';
 
 class SupplierBuyerModel extends SupplierBuyerEntity {
   SupplierBuyerModel({

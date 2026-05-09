@@ -1,18 +1,18 @@
 import 'dart:async';
 
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/language_selector.dart';
-import 'package:dairysathi/common/common_widget/select_bool_option_widget.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/local_datasources/secured_storage_service.dart';
-import 'package:dairysathi/core/other_services/auth_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/assets_paths.dart';
-import 'package:dairysathi/features/profile_and_settings/data/model/curent_plan_model.dart';
-import 'package:dairysathi/features/profile_and_settings/domain/usecases/get_current_plan_usecase.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/language_selector.dart';
+import 'package:DairyVikas/common/common_widget/select_bool_option_widget.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
+import 'package:DairyVikas/core/other_services/auth_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/assets_paths.dart';
+import 'package:DairyVikas/features/profile_and_settings/data/model/curent_plan_model.dart';
+import 'package:DairyVikas/features/profile_and_settings/domain/usecases/get_current_plan_usecase.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -55,16 +55,15 @@ class ProfileController extends GetxController
     //   "color": AppColors.grey700,
     //   "show": true,
     // },
-
-    // {
-    //   'id': "2",
-    //   "title": "Refer & Earn",
-    //   "dec": "Refer friends and earn rewards",
-    //   "showArrow": true,
-    //   "icon": AssetsPaths.referIcon,
-    //   "color": AppColors.grey700,
-    //   "show": true,
-    // },
+    {
+      'id': "2",
+      "title": "Refer & Earn",
+      "dec": "Refer friends and earn rewards",
+      "showArrow": true,
+      "icon": AssetsPaths.referIcon,
+      "color": AppColors.grey700,
+      "show": true,
+    },
     {
       'id': "3",
       "title": "Transaction History",
@@ -147,7 +146,7 @@ class ProfileController extends GetxController
         // AppNavigation.goToCreditsPage();
         break;
       case '2':
-        // AppNavigation.goToReferAndEarnPage();
+        AppNavigation.goToReferAndEarnPage();
         break;
       case '3':
         AppNavigation.goToTransactionHistoryPage();

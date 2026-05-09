@@ -1,15 +1,15 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/select_bool_option_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/collection/data/model/assigned_chart_model.dart';
-import 'package:dairysathi/features/collection/data/model/assignment_model.dart';
-import 'package:dairysathi/features/collection/domain/usecases/update_milk_sale_usecase.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_sale_model.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/add_milk_sale_usecase.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
-import 'package:dairysathi/features/milk_sale/presentation/controllers/all_milk_sales_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/select_bool_option_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/collection/data/model/assigned_chart_model.dart';
+import 'package:DairyVikas/features/collection/data/model/assignment_model.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/update_milk_sale_usecase.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_sale_model.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/add_milk_sale_usecase.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
+import 'package:DairyVikas/features/milk_sale/presentation/controllers/all_milk_sales_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

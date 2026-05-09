@@ -1,8 +1,8 @@
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/add_dairy_responce_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_setting_data_response_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/register_vendor_reponse_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/vendor_data_model.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/add_dairy_responce_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_setting_data_response_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/register_vendor_reponse_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/vendor_data_model.dart';
 import 'package:dio/dio.dart';
 
 class RegisterVendorRemoteDataSource {

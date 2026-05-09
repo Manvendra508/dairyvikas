@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/cross_button.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/khata/data/models/khata_entry_model.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/cross_button.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/khata/data/models/khata_entry_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -40,7 +40,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
           child: Obx(
             () => Visibility(
               visible: !_khataEntriesController.isLoading.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_khataEntriesController.hasError.value,
                 replacement: RetryWidget(
@@ -52,7 +52,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                   children: [
                     Gap.verticalGap(10),
 
-                    DairySathiAppBar(
+                    DairyVikasAppBar(
                       title: AppState
                           .currentKhataBookCustomerForUpdate
                           .name

@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/plan_subscription/data/model/payment_plan_model.dart';
-import 'package:dairysathi/features/plan_subscription/domain/entities/transaction_entity.dart';
+import 'package:DairyVikas/features/plan_subscription/data/model/payment_plan_model.dart';
+import 'package:DairyVikas/features/plan_subscription/domain/entities/transaction_entity.dart';
 
 class TransactionModel extends TransactionEntity {
   const TransactionModel({

@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/milk_suppliers/domain/entities/milk_supplier_entity.dart';
+import 'package:DairyVikas/features/milk_suppliers/domain/entities/milk_supplier_entity.dart';
 
 class MilkSupplierModel extends MilkSupplierEntity {
   MilkSupplierModel({

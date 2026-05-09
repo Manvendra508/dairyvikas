@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/dairy_settings_data_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/dairy_settings_data_entity.dart';
 
 class DairySettingDataModel extends DairySettingsDataEntity {
   DairySettingDataModel({required super.id, required super.name});

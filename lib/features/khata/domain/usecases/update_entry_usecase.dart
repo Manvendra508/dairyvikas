@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/khata/domain/repository/khata_repo.dart';
+import 'package:DairyVikas/features/khata/domain/repository/khata_repo.dart';
 
 class UpdateEntryUsecase {
   final KhataRepo khataRepo;

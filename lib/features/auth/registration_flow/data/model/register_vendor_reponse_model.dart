@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/register_vendor_respose_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/register_vendor_respose_entity.dart';
 
 class RegisterVendorResponseModel extends RegisterVendorReponseEntity {
   RegisterVendorResponseModel({

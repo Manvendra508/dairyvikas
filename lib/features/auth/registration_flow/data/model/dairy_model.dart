@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/dairy_entity.dart'
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/dairy_entity.dart'
     show DairyEntity;
 
 class DairyModel extends DairyEntity {

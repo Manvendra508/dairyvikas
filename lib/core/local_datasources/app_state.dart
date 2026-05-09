@@ -1,15 +1,15 @@
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
-import 'package:dairysathi/features/collection/data/model/collection_model.dart';
-import 'package:dairysathi/features/food/data/models/dealer_model.dart';
-import 'package:dairysathi/features/food/data/models/sale_model.dart';
-import 'package:dairysathi/features/food/data/models/stock_history_model.dart';
-import 'package:dairysathi/features/food/data/models/stock_model.dart';
-import 'package:dairysathi/features/invoices/data/model/invoice_model.dart';
-import 'package:dairysathi/features/khata/data/models/khatabook_user_model.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_buyer_model.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_sale_model.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
-import 'package:dairysathi/features/notice_board/data/models/notice_post_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
+import 'package:DairyVikas/features/collection/data/model/collection_model.dart';
+import 'package:DairyVikas/features/food/data/models/dealer_model.dart';
+import 'package:DairyVikas/features/food/data/models/sale_model.dart';
+import 'package:DairyVikas/features/food/data/models/stock_history_model.dart';
+import 'package:DairyVikas/features/food/data/models/stock_model.dart';
+import 'package:DairyVikas/features/invoices/data/model/invoice_model.dart';
+import 'package:DairyVikas/features/khata/data/models/khatabook_user_model.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_buyer_model.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_sale_model.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/features/notice_board/data/models/notice_post_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,7 +18,7 @@ import '../../features/rate_cart/presentation/chart_helpers/rate_chart_mapper.da
 
 class AppState {
   static String dairyName = 'unavailable';
-  static RxString vendorName = 'Dairy Sathi User'.obs;
+  static RxString vendorName = 'Dairy Vikas User'.obs;
   static String vendorDistrict = 'unknown';
   static String vendorState = 'unknown';
   static String appVersion = '';

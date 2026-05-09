@@ -1,10 +1,10 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/features/notice_board/data/models/notice_post_model.dart';
-import 'package:dairysathi/features/notice_board/domain/usecases/get_notices_posts_usecase.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/features/notice_board/data/models/notice_post_model.dart';
+import 'package:DairyVikas/features/notice_board/domain/usecases/get_notices_posts_usecase.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';

@@ -1,6 +1,6 @@
-import 'package:dairysathi/app/routes/app_router.dart';
-import 'package:dairysathi/app/routes/route_names.dart';
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/app/routes/app_router.dart';
+import 'package:DairyVikas/app/routes/route_names.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -214,6 +214,10 @@ class AppNavigation {
 
   static void goToTransactionHistoryPage() {
     _router.push(RouteNames.transactionHistory);
+  }
+
+  static void goToReferAndEarnPage() {
+    _router.push(RouteNames.referAndEarn);
   }
 
   static void goBack<T extends Object?>([T? result]) {

@@ -1,14 +1,14 @@
 import 'dart:math';
 
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/dashboard/data/model/recent_search_model.dart';
-import 'package:dairysathi/features/dashboard/presentation/controllers/search_in_app_controller.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/dashboard/data/model/recent_search_model.dart';
+import 'package:DairyVikas/features/dashboard/presentation/controllers/search_in_app_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -55,7 +55,7 @@ class SearchInAppPage extends GetView<SearchInAppController> with CommonMixin {
                 //   ],
                 // ),
                 Gap.verticalGap(10),
-                DairySathiAppBar(title: 'Search in App'),
+                DairyVikasAppBar(title: 'Search in App'),
                 Gap.verticalGap(12),
                 _buildTextFormFieldForInAppSearch(),
                 Gap.verticalGap(4),

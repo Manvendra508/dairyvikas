@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/invoices/data/datasources/invoice_ds.dart';
-import 'package:dairysathi/features/invoices/domain/repository/invoice_repo.dart';
+import 'package:DairyVikas/features/invoices/data/datasources/invoice_ds.dart';
+import 'package:DairyVikas/features/invoices/domain/repository/invoice_repo.dart';
 
 class InvoiceRepoImpl implements InvoiceRepo {
   final InvoiceDs invoiceDs;

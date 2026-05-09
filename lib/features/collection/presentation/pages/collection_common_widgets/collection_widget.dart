@@ -1,5 +1,5 @@
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/collection/data/model/collection_model.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/collection/data/model/collection_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

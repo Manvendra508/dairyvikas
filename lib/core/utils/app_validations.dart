@@ -1,4 +1,4 @@
-import 'package:dairysathi/core/utils/app_regex.dart';
+import 'package:DairyVikas/core/utils/app_regex.dart';
 
 class AppValidation {
   String? validateName(String name) {

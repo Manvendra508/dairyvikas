@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/milk_suppliers/data/model/milk_supplier_model.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/model/milk_supplier_model.dart';
 
 class MilkSuppliersReponseEntity {
   List<MilkSupplierModel> suppliers = <MilkSupplierModel>[];

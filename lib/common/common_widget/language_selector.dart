@@ -1,8 +1,8 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_anum.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_chart_common_widgets/bonus_penality_radio_button.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_anum.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_chart_common_widgets/bonus_penality_radio_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

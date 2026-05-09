@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/rate_cart/data/datasources/rate_chart_ds.dart';
-import 'package:dairysathi/features/rate_cart/domain/repository/rate_chart_repo.dart';
+import 'package:DairyVikas/features/rate_cart/data/datasources/rate_chart_ds.dart';
+import 'package:DairyVikas/features/rate_cart/domain/repository/rate_chart_repo.dart';
 import 'package:dio/dio.dart' as fd;
 
 class RateChartRepoImpl implements RateChartRepo {

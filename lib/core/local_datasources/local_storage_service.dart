@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_model.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

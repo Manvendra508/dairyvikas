@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/notice_board/data/datasources/notice_ds.dart';
-import 'package:dairysathi/features/notice_board/domain/repository/notice_board_repo.dart';
+import 'package:DairyVikas/features/notice_board/data/datasources/notice_ds.dart';
+import 'package:DairyVikas/features/notice_board/domain/repository/notice_board_repo.dart';
 
 class NoticeBoardRepoImpl implements NoticeBoardRepo {
   final NoticeDataSource noticeDataSource;

@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/collection/data/datasources/collection_ds.dart';
-import 'package:dairysathi/features/collection/domain/repository/collection_repo.dart';
+import 'package:DairyVikas/features/collection/data/datasources/collection_ds.dart';
+import 'package:DairyVikas/features/collection/domain/repository/collection_repo.dart';
 
 class CollectionRepoImpl implements CollectionRepo {
   final CollectionDataSource collectionDataSource;

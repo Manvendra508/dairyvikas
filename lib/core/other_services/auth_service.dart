@@ -1,11 +1,11 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/local_datasources/secured_storage_service.dart';
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/dashboard/presentation/controllers/dashboard_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/dashboard/presentation/controllers/dashboard_controller.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 

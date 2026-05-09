@@ -1,12 +1,12 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_version_text.dart';
-import 'package:dairysathi/common/common_widget/message_box.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/auth/registration_flow/presentation/controllers/otp_verify_controller.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_version_text.dart';
+import 'package:DairyVikas/common/common_widget/message_box.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/auth/registration_flow/presentation/controllers/otp_verify_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -31,7 +31,7 @@ class OtpVerifyPage extends GetView<OtpVerifyController> {
           child: Column(
             children: [
               Gap.verticalGap(12.h),
-              DairySathiAppBar(title: 'verify_otp'),
+              DairyVikasAppBar(title: 'verify_otp'),
               Gap.verticalGap(12.h),
               _buildOtpForm(phoneNumber),
               Gap.verticalGap(0.36.sh),

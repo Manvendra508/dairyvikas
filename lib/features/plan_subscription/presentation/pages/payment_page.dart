@@ -1,11 +1,11 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/assets_paths.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/dashboard/presentation/controllers/dashboard_controller.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/assets_paths.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/dashboard/presentation/controllers/dashboard_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -207,7 +207,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
                 mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                 children: [
                   pw.Text(
-                    "Dairy Sathi",
+                    "Dairy Vikas",
                     style: pw.TextStyle(
                       font: font,
                       fontSize: 20,
@@ -288,7 +288,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
               /// 🙏 Footer
               pw.Center(
                 child: pw.Text(
-                  "Thank you for choosing Dairy Sathi 🙏",
+                  "Thank you for choosing Dairy Vikas 🙏",
                   style: pw.TextStyle(
                     font: font,
                     fontSize: 11,

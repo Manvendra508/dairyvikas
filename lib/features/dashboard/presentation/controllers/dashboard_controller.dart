@@ -1,15 +1,15 @@
 // lib/presentation/controllers/auth/login_controller.dart
 import 'dart:async';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/choose_photo_widget.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_model.dart';
-import 'package:dairysathi/features/dashboard/domain/entities/dashboard_response_entity.dart';
-import 'package:dairysathi/features/dashboard/domain/usecases/fetch_dashboard_data_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/choose_photo_widget.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_model.dart';
+import 'package:DairyVikas/features/dashboard/data/model/dashbaord_response_model.dart';
+import 'package:DairyVikas/features/dashboard/domain/usecases/fetch_dashboard_data_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -23,7 +23,7 @@ class DashboardController extends GetxController with CommonMixin {
   RxBool hasError = false.obs;
   final FetchDashboardDataUsecase fetchDashboardDataUsecase;
   RxBool isLoading = false.obs;
-  Rx<DashboardResponseEntity?> dashboardData = Rx(null);
+  Rx<DashbaordResponseModel> dashboardData = DashbaordResponseModel.empty().obs;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   RxDouble progress = 0.0.obs;
   String languageCode = 'en';
@@ -133,23 +133,21 @@ class DashboardController extends GetxController with CommonMixin {
       String dairyId = await SharedPrefsService.instance.getDairyId() ?? '';
 
       dashboardData.value = await fetchDashboardDataUsecase(dairyId);
-
-      if (dashboardData.value == null) return;
-      if (dashboardData.value!.success) {
+      if (dashboardData.value.success) {
         hasError.value = false;
 
         bool hasdairyData =
-            dashboardData.value!.dashboardDataModel.dairy != null &&
-            dashboardData.value!.dashboardDataModel.dairy!.state.isNotEmpty;
+            dashboardData.value.dashboardDataModel.dairy != null &&
+            dashboardData.value.dashboardDataModel.dairy!.state.isNotEmpty;
         if (hasdairyData) {
           getVendorStateAndDistrict(
-            dashboardData.value!.dashboardDataModel.dairy!,
+            dashboardData.value.dashboardDataModel.dairy!,
           );
         }
         isLoading.value = false;
       } else {
         hasError.value = true;
-        showAppToastMessage(dashboardData.value!.message, true);
+        showAppToastMessage(dashboardData.value.message, true);
       }
     } catch (e) {
       hasError.value = true;

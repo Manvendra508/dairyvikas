@@ -1,10 +1,10 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/other_services/razorpay_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/plan_subscription/data/model/subscription_plan_model.dart';
-import 'package:dairysathi/features/plan_subscription/domain/usecases/verify_payment_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/other_services/razorpay_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/plan_subscription/data/model/subscription_plan_model.dart';
+import 'package:DairyVikas/features/plan_subscription/domain/usecases/verify_payment_usecase.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
@@ -144,7 +144,7 @@ class SubscriptionPlanController extends GetxController with CommonMixin {
         razorpayService.openCheckout(
           orderId: data[0],
           amount: plan.price,
-          name: "Dairy Sathi",
+          name: "Dairy Vikas",
           contact: "9999999999",
           email: "test@gmail.com",
           key: data[1], // its key

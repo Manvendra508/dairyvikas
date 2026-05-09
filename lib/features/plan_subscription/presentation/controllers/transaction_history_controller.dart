@@ -1,8 +1,8 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/features/plan_subscription/data/model/transaction_model.dart';
-import 'package:dairysathi/features/plan_subscription/domain/usecases/get_transaction_history_usecase.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/features/plan_subscription/data/model/transaction_model.dart';
+import 'package:DairyVikas/features/plan_subscription/domain/usecases/get_transaction_history_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

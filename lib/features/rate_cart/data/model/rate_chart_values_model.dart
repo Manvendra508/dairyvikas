@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/rate_cart/domain/entities/rate_chart_value_entity.dart';
+import 'package:DairyVikas/features/rate_cart/domain/entities/rate_chart_value_entity.dart';
 
 class RateChartValuesModel extends RateChartValueEntity {
   RateChartValuesModel({

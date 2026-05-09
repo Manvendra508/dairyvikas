@@ -1,14 +1,14 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/milk_sale/presentation/pages/milk_sale_common_widget/milk_sale_widget.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/milk_sale/presentation/pages/milk_sale_common_widget/milk_sale_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -34,7 +34,7 @@ class AllMilkSalesPages extends GetView<AllMilkSalesControllers>
         body: Obx(
           () => Visibility(
             visible: !_allMilkSalesControllers.isLoading.value,
-            replacement: DairySathiLoader(),
+            replacement: DairyVikasLoader(),
             child: Visibility(
               visible: !_allMilkSalesControllers.hasError.value,
               replacement: RetryWidget(
@@ -46,7 +46,7 @@ class AllMilkSalesPages extends GetView<AllMilkSalesControllers>
                 children: [
                   Gap.verticalGap(20),
 
-                  DairySathiAppBar(
+                  DairyVikasAppBar(
                     title: 'milk_sale',
                     dairyName: AppState.dairyName.capitalize!,
 

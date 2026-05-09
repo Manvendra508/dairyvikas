@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/profile_and_settings/data/datasources/app_setting_ds.dart';
-import 'package:dairysathi/features/profile_and_settings/domain/repository/app_setting_repo.dart';
+import 'package:DairyVikas/features/profile_and_settings/data/datasources/app_setting_ds.dart';
+import 'package:DairyVikas/features/profile_and_settings/domain/repository/app_setting_repo.dart';
 
 class AppSettingRepoImpl implements AppSettingRepo {
   final AppSettingDs _appSettingDs;

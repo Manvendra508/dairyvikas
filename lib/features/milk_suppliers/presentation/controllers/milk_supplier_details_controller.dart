@@ -1,5 +1,5 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/features/milk_suppliers/domain/usecases/delete_milk_supplier_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/features/milk_suppliers/domain/usecases/delete_milk_supplier_usecase.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 

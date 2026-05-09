@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/food/domain/repository/food_repo.dart';
+import 'package:DairyVikas/features/food/domain/repository/food_repo.dart';
 
 class AddItemUsecase {
   final FoodRepo foodRepo;

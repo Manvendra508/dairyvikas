@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/collection/domain/entities/assigned_chart_entity.dart';
+import 'package:DairyVikas/features/collection/domain/entities/assigned_chart_entity.dart';
 
 import '../../../rate_cart/data/model/rate_chart_values_model.dart';
 

@@ -1,15 +1,15 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_loader.dart';
-import 'package:dairysathi/common/common_widget/app_version_text.dart';
-import 'package:dairysathi/common/common_widget/retry_widget.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_loader.dart';
+import 'package:DairyVikas/common/common_widget/app_version_text.dart';
+import 'package:DairyVikas/common/common_widget/retry_widget.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -33,7 +33,7 @@ class ProfilePage extends GetView<ProfileController> with CommonMixin {
         body: Obx(
           () => Visibility(
             visible: !_profileController.isLoading.value,
-            replacement: DairySathiLoader(),
+            replacement: DairyVikasLoader(),
             child: Visibility(
               visible: !_profileController.hasError.value,
               replacement: RetryWidget(
@@ -45,7 +45,7 @@ class ProfilePage extends GetView<ProfileController> with CommonMixin {
                 children: [
                   Gap.verticalGap(10),
 
-                  DairySathiAppBar(title: 'profile'),
+                  DairyVikasAppBar(title: 'profile'),
                   Gap.verticalGap(6),
                   Divider(thickness: 0.2),
 

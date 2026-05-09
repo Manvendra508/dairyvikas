@@ -1,14 +1,14 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/retry_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/invoices/presentation/controllers/invoice_details_controller.dart';
-import 'package:dairysathi/features/invoices/presentation/pages/inoivce_common_widgets/cattel_feed_card.dart';
-import 'package:dairysathi/features/invoices/presentation/pages/inoivce_common_widgets/deduction_details_card.dart';
-import 'package:dairysathi/features/invoices/presentation/pages/inoivce_common_widgets/invoicedetails_collection_card.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/retry_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/invoices/presentation/controllers/invoice_details_controller.dart';
+import 'package:DairyVikas/features/invoices/presentation/pages/inoivce_common_widgets/cattel_feed_card.dart';
+import 'package:DairyVikas/features/invoices/presentation/pages/inoivce_common_widgets/deduction_details_card.dart';
+import 'package:DairyVikas/features/invoices/presentation/pages/inoivce_common_widgets/invoicedetails_collection_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -38,7 +38,7 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
           child: Obx(
             () => Visibility(
               visible: !_invoiceDetailsController.isLoading.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_invoiceDetailsController.hasError.value,
 
@@ -50,7 +50,7 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
                   children: [
                     Gap.verticalGap(10),
 
-                    DairySathiAppBar(
+                    DairyVikasAppBar(
                       title: 'invoice_details',
                       dairyName: AppState.dairyName.capitalize!,
                       trailingWidget: showRemoveButton

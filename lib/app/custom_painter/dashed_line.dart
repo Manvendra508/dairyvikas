@@ -1,4 +1,4 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class DashedLinePainter extends CustomPainter {

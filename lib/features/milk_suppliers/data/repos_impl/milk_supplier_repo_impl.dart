@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/milk_suppliers/data/datasources/milk_supplier_ds.dart';
+import 'package:DairyVikas/features/milk_suppliers/data/datasources/milk_supplier_ds.dart';
 
 import '../../domain/repository/milk_supplier_repo.dart';
 

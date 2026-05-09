@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/khata/data/datasources/khata_datasource.dart';
+import 'package:DairyVikas/features/khata/data/datasources/khata_datasource.dart';
 
 import '../../domain/repository/khata_repo.dart';
 

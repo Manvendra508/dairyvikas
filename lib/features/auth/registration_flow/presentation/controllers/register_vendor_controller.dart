@@ -1,10 +1,10 @@
 // lib/presentation/controllers/auth/login_controller.dart
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_validations.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/register_vendor_respose_entity.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/usecases/register_vendor_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_validations.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/register_vendor_respose_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/usecases/register_vendor_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

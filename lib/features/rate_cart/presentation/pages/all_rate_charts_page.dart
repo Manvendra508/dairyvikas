@@ -1,20 +1,20 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_loader.dart';
-import 'package:dairysathi/common/common_widget/check_box_widget.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/cross_button.dart';
-import 'package:dairysathi/common/common_widget/retry_widget.dart';
-import 'package:dairysathi/common/common_widget/shake_widget.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/rate_cart/presentation/controllers/all_rate_charts_controllers.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_chart_common_widgets/rate_chart_widget.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_loader.dart';
+import 'package:DairyVikas/common/common_widget/check_box_widget.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/cross_button.dart';
+import 'package:DairyVikas/common/common_widget/retry_widget.dart';
+import 'package:DairyVikas/common/common_widget/shake_widget.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/controllers/all_rate_charts_controllers.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_chart_common_widgets/rate_chart_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -39,7 +39,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
           child: Obx(
             () => Visibility(
               visible: !_allRateChartsController.isLoadingChart.value,
-              replacement: DairySathiLoader(),
+              replacement: DairyVikasLoader(),
               child: Visibility(
                 visible: !_allRateChartsController.hasError.value,
                 replacement: RetryWidget(
@@ -50,7 +50,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
                   children: [
                     Gap.verticalGap(10),
 
-                    DairySathiAppBar(
+                    DairyVikasAppBar(
                       title: 'rate_charts',
                       dairyName: AppState.dairyName.capitalize!,
                       trailingWidget: _buildAppBarButton(),

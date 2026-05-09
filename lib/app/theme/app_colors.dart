@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  //dairy sathi  app colors
+  //Dairy Vikas  app colors
   static const Color themeColor = Color(0xFF096E50); // Main theme color
 
   static const Color lightthemeColor = Color.fromARGB(255, 127, 205, 181);

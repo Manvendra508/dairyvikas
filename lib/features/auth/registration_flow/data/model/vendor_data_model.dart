@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/auth/registration_flow/data/model/vendor_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/vendor_data_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/vendor_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/vendor_data_entity.dart';
 
 class VendorDataModel extends VendorDataEntity {
   VendorDataModel({

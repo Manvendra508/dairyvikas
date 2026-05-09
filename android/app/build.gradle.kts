@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.dairysathi.app"
+    namespace = "com.DairyVikas.app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -35,7 +35,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.dairysathi.app"
+        applicationId = "com.DairyVikas.app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

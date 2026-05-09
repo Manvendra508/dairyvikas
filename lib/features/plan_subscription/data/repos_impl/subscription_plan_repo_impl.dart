@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/plan_subscription/domain/repository/subscription_plan_repo.dart';
+import 'package:DairyVikas/features/plan_subscription/domain/repository/subscription_plan_repo.dart';
 
 import '../datasources/subscription_plan_ds.dart';
 

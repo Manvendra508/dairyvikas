@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/milk_sale/data/models/milk_buyer_model.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_buyer_model.dart';
 
 class MilkBuyerResponseEntity {
   final bool success;

@@ -1,14 +1,14 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_version_text.dart'
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_version_text.dart'
     show AppVersionText;
-import 'package:dairysathi/common/common_widget/language_selector.dart';
-import 'package:dairysathi/common/common_widget/message_box.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_regex.dart';
-import 'package:dairysathi/core/utils/gap.dart';
+import 'package:DairyVikas/common/common_widget/language_selector.dart';
+import 'package:DairyVikas/common/common_widget/message_box.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_regex.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -101,8 +101,6 @@ class LoginPage extends GetView<LoginController> {
   }
 
   _buildLoginInForm() {
-
-    
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 15.w),
       child: Column(

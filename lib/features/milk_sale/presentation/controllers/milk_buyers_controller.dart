@@ -1,11 +1,11 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_buyer_model.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_buyers_response_model.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/delete_milk_buyer_usecase.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
-import 'package:dairysathi/features/milk_sale/domain/usecases/update_buyer_status_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_buyer_model.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_buyers_response_model.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/delete_milk_buyer_usecase.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/get_all_milk_buyers_usecase.dart';
+import 'package:DairyVikas/features/milk_sale/domain/usecases/update_buyer_status_usecase.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

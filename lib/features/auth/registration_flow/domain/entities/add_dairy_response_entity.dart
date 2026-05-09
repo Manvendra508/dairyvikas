@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_model.dart';
 
 class AddDairyResponseEntity {
   final bool success;

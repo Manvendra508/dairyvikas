@@ -1,12 +1,12 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/collection/data/model/assigned_chart_model.dart';
-import 'package:dairysathi/features/collection/data/model/assignment_model.dart';
-import 'package:dairysathi/features/collection/data/model/collection_model.dart';
-import 'package:dairysathi/features/collection/domain/usecases/add_collection_usecase.dart';
-import 'package:dairysathi/features/collection/domain/usecases/delete_collection_usecase.dart';
-import 'package:dairysathi/features/collection/domain/usecases/update_collection_usecase.dart';
-import 'package:dairysathi/features/collection/presentation/controllers/adjust_collection_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/collection/data/model/assigned_chart_model.dart';
+import 'package:DairyVikas/features/collection/data/model/assignment_model.dart';
+import 'package:DairyVikas/features/collection/data/model/collection_model.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/add_collection_usecase.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/delete_collection_usecase.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/update_collection_usecase.dart';
+import 'package:DairyVikas/features/collection/presentation/controllers/adjust_collection_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

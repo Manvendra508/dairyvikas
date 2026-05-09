@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/collection/domain/entities/collection_can_entity.dart';
+import 'package:DairyVikas/features/collection/domain/entities/collection_can_entity.dart';
 
 class MilkCollectionCanModel extends MilkCollectionEntity {
   const MilkCollectionCanModel({

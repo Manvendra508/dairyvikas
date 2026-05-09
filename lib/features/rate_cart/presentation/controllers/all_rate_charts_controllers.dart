@@ -1,11 +1,11 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/rate_cart/data/model/rate_chart_model.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/get_all_rate_charts_usecase.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/unassign_ratechart_dairy_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/rate_cart/data/model/rate_chart_model.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/get_all_rate_charts_usecase.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/unassign_ratechart_dairy_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

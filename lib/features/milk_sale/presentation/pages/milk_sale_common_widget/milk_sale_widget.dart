@@ -1,6 +1,6 @@
-import 'package:dairysathi/app/extensions/string_ext.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/milk_sale/data/models/milk_sale_model.dart';
+import 'package:DairyVikas/app/extensions/string_ext.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/milk_sale/data/models/milk_sale_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

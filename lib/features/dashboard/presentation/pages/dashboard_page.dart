@@ -1,17 +1,17 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_drawer.dart';
-import 'package:dairysathi/common/common_widget/caurosal_slider.dart';
-import 'package:dairysathi/common/common_widget/common_container.dart';
-import 'package:dairysathi/common/common_widget/network_image.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/core/utils/app_icons.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/dashboard/data/model/dashboard_feature_model.dart'
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_drawer.dart';
+import 'package:DairyVikas/common/common_widget/caurosal_slider.dart';
+import 'package:DairyVikas/common/common_widget/common_container.dart';
+import 'package:DairyVikas/common/common_widget/network_image.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/core/utils/app_icons.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/dashboard/data/model/dashboard_feature_model.dart'
     show DashboardFeatureModel;
-import 'package:dairysathi/features/dashboard/presentation/controllers/dashboard_controller.dart'
+import 'package:DairyVikas/features/dashboard/presentation/controllers/dashboard_controller.dart'
     show DashboardController;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -42,7 +42,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
           () => Scaffold(
             resizeToAvoidBottomInset: true,
             key: _dashboardController.scaffoldKey,
-            drawer: DairySathiAppDrawer(
+            drawer: DairyVikasAppDrawer(
               district: _dashboardController.vendorDistrict,
               state: _dashboardController.vendorState,
             ),
@@ -201,13 +201,11 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                   children: [
                     TextWidget(
                       text: 'free_trial_msg'.trParams({
-                        'days': _dashboardController.dashboardData.value == null
-                            ? 'NaN'
-                            : _dashboardController
-                                  .dashboardData
-                                  .value!
-                                  .dashboardDataModel
-                                  .daysLeftInFreeTrial,
+                        'days': _dashboardController
+                            .dashboardData
+                            .value
+                            .dashboardDataModel
+                            .daysLeftInFreeTrial,
                       }),
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w600,
@@ -291,34 +289,32 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
             // ),
             WidgetBannerSlider(),
             Gap.verticalGap(17),
-            _dashboardController.dashboardData.value == null
-                ? SizedBox.shrink()
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    spacing: 18.h,
-                    children: List.generate(
-                      _dashboardController
-                          .dashboardData
-                          .value!
-                          .dashboardDataModel
-                          .sections
-                          .length,
-                      (index) => _buildSection(
-                        _dashboardController
-                            .dashboardData
-                            .value!
-                            .dashboardDataModel
-                            .sections[index]
-                            .featureCategory,
-                        _dashboardController
-                            .dashboardData
-                            .value!
-                            .dashboardDataModel
-                            .sections[index]
-                            .features,
-                      ),
-                    ),
-                  ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 18.h,
+              children: List.generate(
+                _dashboardController
+                    .dashboardData
+                    .value
+                    .dashboardDataModel
+                    .sections
+                    .length,
+                (index) => _buildSection(
+                  _dashboardController
+                      .dashboardData
+                      .value
+                      .dashboardDataModel
+                      .sections[index]
+                      .featureCategory,
+                  _dashboardController
+                      .dashboardData
+                      .value
+                      .dashboardDataModel
+                      .sections[index]
+                      .features,
+                ),
+              ),
+            ),
             Gap.verticalGap(17),
           ],
         ),
@@ -440,7 +436,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                       if (AppState.isDairyAdded) {
                         if (_dashboardController
                                 .dashboardData
-                                .value!
+                                .value
                                 .dashboardDataModel
                                 .daysLeftInFreeTrial ==
                             '0') {

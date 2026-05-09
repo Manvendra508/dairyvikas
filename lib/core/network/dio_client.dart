@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/secured_storage_service.dart';
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/core/other_services/auth_service.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/core/other_services/auth_service.dart';
 import 'package:dio/dio.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 

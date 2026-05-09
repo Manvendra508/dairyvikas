@@ -1,6 +1,6 @@
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/food/data/models/dealer_model.dart';
-import 'package:dairysathi/features/food/presentation/controllers/add_food_stock_controller.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/food/data/models/dealer_model.dart';
+import 'package:DairyVikas/features/food/presentation/controllers/add_food_stock_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

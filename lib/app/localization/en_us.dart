@@ -33,7 +33,7 @@ const Map<String, String> enUS = {
   "free_trail_expired": "Free Trial Expired!",
   "free_trial_expired_msg_part1":
       "Your 7-days free trial has come to an \nend. To continue using all the \npremium features of ",
-  "free_trial_expired_msg_part2": "Dairy Sathi",
+  "free_trial_expired_msg_part2": "Dairy Vikas",
   "free_trial_expired_msg_part3": "\nplease upgrade your plan.",
   "enter_dairyname": "Enter Dairy Name",
   "enter_village_name": "Enter Village Name",
@@ -513,7 +513,7 @@ const Map<String, String> enUS = {
   "enter_customer_name": "Enter Customer Name",
   "select_from_contacts": 'Select From Contacts',
   "delete_customer_msg": "Are you sure you want to delete @name",
-  "dairy_sathi_khata": "Dairy Sathi Khata",
+  "dairy_sathi_khata": "Dairy Vikas Khata",
   "transaction_record_msg":
       "Transactions Will be recorded automaically \nfor this customer.",
   "please_enter_amount": "Please Enter Amount",
@@ -523,7 +523,7 @@ const Map<String, String> enUS = {
   "subscriptions": "Subscriptions Plans",
   "choose_plan": "Choose Your Plan",
   "choose_plan_msg":
-      "Choose Your favorite plan and grow your bussiness with Dairy Sathi",
+      "Choose Your favorite plan and grow your bussiness with Dairy Vikas",
   "no_plans_found": "No Plans Found!",
   "best_value": "Best Value",
   "payment_failed": "Payment Failed!",
@@ -548,4 +548,38 @@ const Map<String, String> enUS = {
       "Our support team is available 24/7 to\n assist payment queries",
   "retry_payment": "Retry Payment",
   "success": "success",
+
+  // refer and earn strings
+  "refer_and_earn": "Refer & Earn",
+
+  "friends_bring_rewards": "Friends Bring Rewards!",
+
+  "refer_description":
+      "Refer your friends and they will get @credits credits and you will get @credits2 credits on their first payment.",
+
+  "credits": "@credits Credits",
+
+  "your_referral_code": "Your Referral Code",
+
+  "copy": "Copy",
+
+  "how_it_works": "How it Works",
+
+  "invite_friends": "Invite Friends",
+
+  "invite_friends_desc": "Share Your Referral Code or Link to your friends",
+
+  "they_register": "They Register",
+
+  "they_register_desc":
+      "Your Friend Register and buy their first plan using your referral code or link",
+
+  "you_get_credits": "You Get @credits Credits",
+
+  "you_get_credits_desc":
+      "You will receive @credits credits for each friend who joins and makes their first payment using your referral code or link",
+
+  "whatsapp_share": "WhatsApp Share",
+
+  "share_link": "Share Link",
 };

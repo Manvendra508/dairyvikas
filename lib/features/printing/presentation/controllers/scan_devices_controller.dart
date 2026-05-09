@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:dairysathi/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
 import 'package:flutter_pos_printer_platform_image_3/flutter_pos_printer_platform_image_3.dart';
 import 'package:get/get.dart';
 

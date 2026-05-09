@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/food/data/datasources/food_datasource.dart';
-import 'package:dairysathi/features/food/domain/repository/food_repo.dart';
+import 'package:DairyVikas/features/food/data/datasources/food_datasource.dart';
+import 'package:DairyVikas/features/food/domain/repository/food_repo.dart';
 
 class FoodRepoImpls implements FoodRepo {
   final FoodDatasource foodDatasource;

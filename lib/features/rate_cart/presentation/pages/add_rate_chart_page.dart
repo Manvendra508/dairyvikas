@@ -1,17 +1,17 @@
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/common/common_widget/app_bar.dart';
-import 'package:dairysathi/common/common_widget/app_button.dart';
-import 'package:dairysathi/common/common_widget/app_loader.dart';
-import 'package:dairysathi/common/common_widget/rate_chart.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/gap.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
-import 'package:dairysathi/features/rate_cart/presentation/controllers/add_rate_chart_controller.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_chart_common_widgets/excel_select_option.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_chart_common_widgets/fixed_rate_wdget.dart';
-import 'package:dairysathi/features/rate_cart/presentation/pages/rate_charts/fat_snf_rate_per_kg.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/common/common_widget/app_bar.dart';
+import 'package:DairyVikas/common/common_widget/app_button.dart';
+import 'package:DairyVikas/common/common_widget/app_loader.dart';
+import 'package:DairyVikas/common/common_widget/rate_chart.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/gap.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_setting_data_model.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/controllers/add_rate_chart_controller.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_chart_common_widgets/excel_select_option.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_chart_common_widgets/fixed_rate_wdget.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_charts/fat_snf_rate_per_kg.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -46,7 +46,7 @@ class AddRateChartPage extends GetView<AddRateChartController>
             child: Obx(
               () => Visibility(
                 visible: !_addrateChartController.isLoading.value,
-                replacement: DairySathiLoader(),
+                replacement: DairyVikasLoader(),
 
                 child: Visibility(
                   visible: !_addrateChartController.hasError.value,
@@ -59,7 +59,7 @@ class AddRateChartPage extends GetView<AddRateChartController>
                     children: [
                       Gap.verticalGap(10),
 
-                      DairySathiAppBar(
+                      DairyVikasAppBar(
                         title: AppState.isRateChartEdit
                             ? 'edit_rate_chart'
                             : 'add_rate_chart',

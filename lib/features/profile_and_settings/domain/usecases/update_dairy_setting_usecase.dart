@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/profile_and_settings/domain/repository/app_setting_repo.dart';
+import 'package:DairyVikas/features/profile_and_settings/domain/repository/app_setting_repo.dart';
 
 class UpdateDairySettingUsecase {
   final AppSettingRepo _appSettingRepo;

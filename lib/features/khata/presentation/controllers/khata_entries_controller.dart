@@ -1,9 +1,9 @@
-import 'package:dairysathi/features/khata/data/models/khata_entry_model.dart';
-import 'package:dairysathi/features/khata/domain/usecases/add_entry_usecase.dart';
-import 'package:dairysathi/features/khata/domain/usecases/delete_entry_usecase.dart';
-import 'package:dairysathi/features/khata/domain/usecases/get_entries_by_user_usecase.dart';
-import 'package:dairysathi/features/khata/domain/usecases/update_entry_usecase.dart';
-import 'package:dairysathi/features/khata/presentation/controllers/all_khata_customers_controller.dart';
+import 'package:DairyVikas/features/khata/data/models/khata_entry_model.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/add_entry_usecase.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/delete_entry_usecase.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/get_entries_by_user_usecase.dart';
+import 'package:DairyVikas/features/khata/domain/usecases/update_entry_usecase.dart';
+import 'package:DairyVikas/features/khata/presentation/controllers/all_khata_customers_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

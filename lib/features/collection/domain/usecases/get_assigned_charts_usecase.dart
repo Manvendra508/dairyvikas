@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/collection/domain/repository/collection_repo.dart';
+import 'package:DairyVikas/features/collection/domain/repository/collection_repo.dart';
 
 class GetAllssignedChartsUsecase {
   final CollectionRepo collectionRepo;

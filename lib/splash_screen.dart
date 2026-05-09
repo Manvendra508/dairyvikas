@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dairysathi/app/theme/app_colors.dart';
-import 'package:dairysathi/common/common_widget/app_update_widget.dart';
-import 'package:dairysathi/common/common_widget/text_widget.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/core/other_services/auth_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
+import 'package:DairyVikas/app/theme/app_colors.dart';
+import 'package:DairyVikas/common/common_widget/app_update_widget.dart';
+import 'package:DairyVikas/common/common_widget/text_widget.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/core/other_services/auth_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:http/http.dart' as http;
@@ -112,7 +112,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Uri url;
     if (Platform.isAndroid) {
       url = Uri.parse(
-        'https://play.google.com/store/apps/details?id=com.dairysathi.app',
+        'https://play.google.com/store/apps/details?id=com.DairyVikas.app',
       );
     } else {
       throw 'Unsupported platform';
@@ -139,7 +139,7 @@ class _SplashScreenState extends State<SplashScreen> {
         height: 1.sh,
         child: Center(
           child: TextWidget(
-            text: 'DairySathi',
+            text: 'DairyVikas',
             fontSize: 30,
             textColor: AppColors.whiteColor,
             fontWeight: FontWeight.w600,

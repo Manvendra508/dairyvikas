@@ -1,9 +1,9 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/features/rate_cart/data/model/assignable_supplier_model.dart';
-import 'package:dairysathi/features/rate_cart/domain/usecases/get_all_assignable_suppliers_usecase.dart';
-import 'package:dairysathi/features/rate_cart/presentation/controllers/all_rate_charts_controllers.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/features/rate_cart/data/model/assignable_supplier_model.dart';
+import 'package:DairyVikas/features/rate_cart/domain/usecases/get_all_assignable_suppliers_usecase.dart';
+import 'package:DairyVikas/features/rate_cart/presentation/controllers/all_rate_charts_controllers.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/utils/app_navigation.dart';

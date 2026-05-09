@@ -1,5 +1,5 @@
-import 'package:dairysathi/features/auth/registration_flow/data/model/dairy_model.dart';
-import 'package:dairysathi/features/auth/registration_flow/domain/entities/add_dairy_response_entity.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/dairy_model.dart';
+import 'package:DairyVikas/features/auth/registration_flow/domain/entities/add_dairy_response_entity.dart';
 
 class AddDairyResponseModel extends AddDairyResponseEntity {
   AddDairyResponseModel({

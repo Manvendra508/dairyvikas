@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/invoices/domain/repository/invoice_repo.dart';
+import 'package:DairyVikas/features/invoices/domain/repository/invoice_repo.dart';
 
 class DeleteInvoiceUsecase {
   final InvoiceRepo invoiceRepo;

@@ -1,10 +1,10 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/features/collection/data/model/collection_model.dart';
-import 'package:dairysathi/features/collection/domain/usecases/get_all_collection_usecase.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/features/collection/data/model/collection_model.dart';
+import 'package:DairyVikas/features/collection/domain/usecases/get_all_collection_usecase.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 

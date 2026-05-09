@@ -1,11 +1,11 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/local_datasources/local_storage_service.dart';
-import 'package:dairysathi/features/invoices/data/model/invoice_details_collection_model.dart';
-import 'package:dairysathi/features/invoices/data/model/invoice_details_item_sale_model.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/delete_invoice_usecase.dart';
-import 'package:dairysathi/features/invoices/domain/usecases/get_invoice_details_usecase.dart';
-import 'package:dairysathi/features/invoices/presentation/controllers/all_invoice_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
+import 'package:DairyVikas/features/invoices/data/model/invoice_details_collection_model.dart';
+import 'package:DairyVikas/features/invoices/data/model/invoice_details_item_sale_model.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/delete_invoice_usecase.dart';
+import 'package:DairyVikas/features/invoices/domain/usecases/get_invoice_details_usecase.dart';
+import 'package:DairyVikas/features/invoices/presentation/controllers/all_invoice_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

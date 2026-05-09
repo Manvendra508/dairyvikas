@@ -1,4 +1,4 @@
-import 'package:dairysathi/features/dashboard/data/model/dashboard_feature_model.dart';
+import 'package:DairyVikas/features/dashboard/data/model/dashboard_feature_model.dart';
 
 class DashboardSectionEntity {
   final String id;

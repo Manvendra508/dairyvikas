@@ -1,5 +1,5 @@
-import 'package:dairysathi/core/network/api_endpoints.dart';
-import 'package:dairysathi/features/auth/registration_flow/data/model/vendor_data_model.dart';
+import 'package:DairyVikas/core/network/api_endpoints.dart';
+import 'package:DairyVikas/features/auth/registration_flow/data/model/vendor_data_model.dart';
 import 'package:dio/dio.dart';
 
 class LoginVendorRemoteDataSource {

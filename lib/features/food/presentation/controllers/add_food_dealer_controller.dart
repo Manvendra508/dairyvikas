@@ -1,12 +1,12 @@
-import 'package:dairysathi/common/common_mixin.dart';
-import 'package:dairysathi/core/error/exceptions.dart' show AppExceptionHandler;
-import 'package:dairysathi/core/local_datasources/app_state.dart';
-import 'package:dairysathi/core/utils/app_navigation.dart';
-import 'package:dairysathi/core/utils/app_validations.dart';
-import 'package:dairysathi/features/food/data/models/dealer_model.dart';
-import 'package:dairysathi/features/food/domain/usecases/add_food_dealer_usecase.dart';
-import 'package:dairysathi/features/food/domain/usecases/update_food_dealer_usecase.dart';
-import 'package:dairysathi/features/food/presentation/controllers/food_dealers_controller.dart';
+import 'package:DairyVikas/common/common_mixin.dart';
+import 'package:DairyVikas/core/error/exceptions.dart' show AppExceptionHandler;
+import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/utils/app_navigation.dart';
+import 'package:DairyVikas/core/utils/app_validations.dart';
+import 'package:DairyVikas/features/food/data/models/dealer_model.dart';
+import 'package:DairyVikas/features/food/domain/usecases/add_food_dealer_usecase.dart';
+import 'package:DairyVikas/features/food/domain/usecases/update_food_dealer_usecase.dart';
+import 'package:DairyVikas/features/food/presentation/controllers/food_dealers_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
