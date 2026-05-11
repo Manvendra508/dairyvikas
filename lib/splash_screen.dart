@@ -112,7 +112,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Uri url;
     if (Platform.isAndroid) {
       url = Uri.parse(
-        'https://play.google.com/store/apps/details?id=com.DairyVikas.app',
+        'https://play.google.com/store/apps/details?id=com.dairyvikas.app',
       );
     } else {
       throw 'Unsupported platform';

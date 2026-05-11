@@ -5,10 +5,11 @@ plugins {
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.DairyVikas.app"
+    namespace = "com.dairysathi.app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -16,6 +17,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -35,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.DairyVikas.app"
+        applicationId = "com.dairysathi.app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -48,11 +50,18 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
         }
-
-        getByName("debug") {
-        applicationIdSuffix = ".debug"
-        }
+      
+      
+     
     }
+}
+
+dependencies {
+
+    coreLibraryDesugaring(
+        "com.android.tools:desugar_jdk_libs:2.1.4"
+    )
+
 }
 
 flutter {

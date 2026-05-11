@@ -1,4 +1,4 @@
-package com.DairyVikas.app
+package com.dairysathi.app
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698580111949",
+    "project_id": "dairy-vikas",
+    "storage_bucket": "dairy-vikas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698580111949:android:0d4bb53000ebd13df90204",
+        "android_client_info": {
+          "package_name": "com.dairysathi.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrhSC7ZcIc6xbh4fgo5USS7pLOsGir5mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

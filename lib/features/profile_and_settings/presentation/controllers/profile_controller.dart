@@ -46,15 +46,15 @@ class ProfileController extends GetxController
   });
 
   List profileData = [
-    // {
-    //   'id': "1",
-    //   "title": "Credits",
-    //   "dec": "You have ₹200 credits",
-    //   "showArrow": false,
-    //   "icon": AssetsPaths.creditsIcon,
-    //   "color": AppColors.grey700,
-    //   "show": true,
-    // },
+    {
+      'id': "1",
+      "title": "Credits",
+      "dec": "You have ₹200 credits",
+      "showArrow": false,
+      "icon": AssetsPaths.creditsIcon,
+      "color": AppColors.grey700,
+      "show": true,
+    },
     {
       'id': "2",
       "title": "Refer & Earn",

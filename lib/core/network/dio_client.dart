@@ -5,6 +5,7 @@ import 'package:DairyVikas/core/local_datasources/secured_storage_service.dart';
 import 'package:DairyVikas/core/network/api_endpoints.dart';
 import 'package:DairyVikas/core/other_services/auth_service.dart';
 import 'package:dio/dio.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 
 class DioClient with CommonMixin {
@@ -78,6 +79,35 @@ class DioClient with CommonMixin {
         },
 
         onError: (DioException e, handler) async {
+          /// -------------------------------
+          /// CRASHLYTICS LOGGING
+          /// -------------------------------
+          final statusCode = e.response?.statusCode;
+
+          if (statusCode != 401 &&
+              e.type != DioExceptionType.connectionTimeout &&
+              e.type != DioExceptionType.receiveTimeout &&
+              e.type != DioExceptionType.connectionError &&
+              e.type != DioExceptionType.cancel) {
+            await FirebaseCrashlytics.instance.recordError(
+              e,
+              e.stackTrace,
+
+              reason:
+                  '''
+       API FAILED
+
+       URL: ${e.requestOptions.uri}
+
+       METHOD: ${e.requestOptions.method}
+
+       STATUS CODE: ${e.response?.statusCode}
+
+       MESSAGE: ${e.message}
+          ''',
+            );
+          }
+
           if (e.requestOptions.headers['skipAuth'] == true) {
             // Don’t retry refresh API
             return handler.next(e);
