@@ -327,7 +327,7 @@ class AddFoodStockPage extends GetView<AddFoodStockController>
                 width: 100.w,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5.r),
-                  color: AppColors.grey500.withOpacity(0.1),
+                  color: AppColors.grey500.withValues(alpha: 0.1),
                 ),
                 child: Center(
                   child: Padding(
@@ -416,7 +416,7 @@ class AddFoodStockPage extends GetView<AddFoodStockController>
                           height: 20.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.themeColor.withOpacity(0.1),
+                            color: AppColors.themeColor.withValues(alpha: 0.1),
                           ),
                           child: Center(
                             child: Padding(

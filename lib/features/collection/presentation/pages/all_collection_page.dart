@@ -61,7 +61,7 @@ class AllCollectionPage extends GetView<AllCollectionController>
                   Container(
                     width: 1.sw,
                     height: 30.h,
-                    color: AppColors.success.withOpacity(0.15),
+                    color: AppColors.success.withValues(alpha: 0.15),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -172,7 +172,7 @@ class AllCollectionPage extends GetView<AllCollectionController>
                           height: 22.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.themeColor.withOpacity(0.8),
+                            color: AppColors.themeColor.withValues(alpha: 0.8),
                           ),
                           child: Center(
                             child: AnimatedRotation(
@@ -584,7 +584,7 @@ class AllCollectionPage extends GetView<AllCollectionController>
                     borderRadius: BorderRadius.circular(30.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.themeColor.withOpacity(0.4),
+                      color: AppColors.themeColor.withValues(alpha: 0.4),
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
@@ -592,14 +592,14 @@ class AllCollectionPage extends GetView<AllCollectionController>
                     borderRadius: BorderRadius.circular(30.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.themeColor.withOpacity(0.4),
+                      color: AppColors.themeColor.withValues(alpha: 0.4),
                     ),
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.themeColor.withOpacity(0.4),
+                      color: AppColors.themeColor.withValues(alpha: 0.4),
                     ),
                   ),
 
@@ -666,7 +666,7 @@ class AllCollectionPage extends GetView<AllCollectionController>
                 text: 'present:',
                 fontSize: 11.5.sp,
                 fontWeight: FontWeight.w600,
-                textColor: AppColors.redColor.withOpacity(0.7),
+                textColor: AppColors.redColor.withValues(alpha: 0.7),
               ),
               Gap.horizentalGap(5),
               TextWidget(

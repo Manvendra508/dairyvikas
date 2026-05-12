@@ -138,7 +138,7 @@ class AddMilksalePage extends GetView<AddMilksaleController> with CommonMixin {
                         border: Border.all(
                           width: 0.5,
                           color: _addMilksaleController.isBuyerInActive.value
-                              ? AppColors.redColor.withOpacity(0.8)
+                              ? AppColors.redColor.withValues(alpha: 0.8)
                               : AppColors.themeColor,
                         ),
                       ),
@@ -167,7 +167,9 @@ class AddMilksalePage extends GetView<AddMilksaleController> with CommonMixin {
                                 height: 20.h,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5.r),
-                                  color: AppColors.themeColor.withOpacity(0.1),
+                                  color: AppColors.themeColor.withValues(
+                                    alpha: 0.1,
+                                  ),
                                 ),
                                 child: Center(
                                   child: Padding(
@@ -210,7 +212,7 @@ class AddMilksalePage extends GetView<AddMilksaleController> with CommonMixin {
                             '${_addMilksaleController.searchedBuyer.buyerName} is inactive.',
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w500,
-                        textColor: AppColors.redColor.withOpacity(0.8),
+                        textColor: AppColors.redColor.withValues(alpha: 0.8),
                       ),
                     ),
                   ),
@@ -398,7 +400,7 @@ class AddMilksalePage extends GetView<AddMilksaleController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isActive.value
-                ? AppColors.themeColor.withOpacity(0.7)
+                ? AppColors.themeColor.withValues(alpha: 0.7)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(8.r),
 
@@ -620,7 +622,7 @@ class AddMilksalePage extends GetView<AddMilksaleController> with CommonMixin {
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),

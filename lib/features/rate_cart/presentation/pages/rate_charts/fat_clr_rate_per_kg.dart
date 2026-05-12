@@ -545,7 +545,7 @@ class FatClrRatePerKgState extends State<FatClrRatePerKg> with CommonMixin {
           width: widget.isCrlOnly ? 1.sw / 1.06 : 1.sw / 2.2,
 
           decoration: BoxDecoration(
-            color: AppColors.blackColor.withOpacity(0.1),
+            color: AppColors.blackColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(4.r),
               bottomLeft: Radius.circular(4.r),
@@ -887,7 +887,7 @@ class FatClrRatePerKgState extends State<FatClrRatePerKg> with CommonMixin {
           margin: EdgeInsets.symmetric(horizontal: 12.w),
           padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 7.w),
           decoration: BoxDecoration(
-            color: AppColors.whiteColor.withOpacity(0.06),
+            color: AppColors.whiteColor.withValues(alpha: 0.06),
             borderRadius: BorderRadius.circular(6.r),
             border: Border.all(width: 0.8, color: AppColors.lightBorder),
           ),

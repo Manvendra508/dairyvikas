@@ -131,7 +131,7 @@ class NoticePostsPage extends GetView<NoticePostsController> with CommonMixin {
               //         borderRadius: BorderRadius.circular(5.r),
               //         color: _noticePostsController
               //             .getPostStatusColor(notice.status.toLowerCase())
-              //             .withOpacity(0.1),
+              //             .withValues(alpha : )(0.1),
               //       ),
               //       child: Row(
               //         children: [
@@ -275,7 +275,7 @@ class NoticePostsPage extends GetView<NoticePostsController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 

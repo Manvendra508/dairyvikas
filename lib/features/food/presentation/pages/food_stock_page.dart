@@ -116,7 +116,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
             height: 173.h,
             borderRaduis: 14.r,
             bordercolor: AppColors.whiteColor,
-            containerColor: AppColors.redColor.withOpacity(1),
+            containerColor: AppColors.redColor.withValues(alpha: 1),
             child: Container(),
           ),
         ),
@@ -164,8 +164,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30.r),
                             color: isActive
-                                ? AppColors.themeColor.withOpacity(0.1)
-                                : AppColors.redColor.withOpacity(0.1),
+                                ? AppColors.themeColor.withValues(alpha: 0.1)
+                                : AppColors.redColor.withValues(alpha: 0.1),
                           ),
                           child: Center(
                             child: Padding(
@@ -176,8 +176,10 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                               child: TextWidget(
                                 text: isActive ? 'in_stock' : 'out_of_stock',
                                 textColor: isActive
-                                    ? AppColors.themeColor.withOpacity(0.8)
-                                    : AppColors.redColor.withOpacity(0.8),
+                                    ? AppColors.themeColor.withValues(
+                                        alpha: 0.8,
+                                      )
+                                    : AppColors.redColor.withValues(alpha: 0.8),
                                 fontSize: 9.5.sp,
                                 fontWeight: FontWeight.w700,
                               ),
@@ -202,7 +204,9 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                               children: [
                                 TextWidget(
                                   text: 'total_qty',
-                                  textColor: AppColors.grey400.withOpacity(0.8),
+                                  textColor: AppColors.grey400.withValues(
+                                    alpha: 0.8,
+                                  ),
                                   fontSize: 11.sp,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -240,8 +244,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                                 children: [
                                   TextWidget(
                                     text: 'sold/stock',
-                                    textColor: AppColors.grey400.withOpacity(
-                                      0.8,
+                                    textColor: AppColors.grey400.withValues(
+                                      alpha: 0.8,
                                     ),
                                     fontSize: 11.sp,
                                     fontWeight: FontWeight.w600,
@@ -254,8 +258,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                                             '${stockItem.totalSold}/${stockItem.stockLeft}',
                                         textColor: isActive
                                             ? AppColors.blackColor
-                                            : AppColors.redColor.withOpacity(
-                                                0.8,
+                                            : AppColors.redColor.withValues(
+                                                alpha: 0.8,
                                               ),
                                         fontSize: 15.5.sp,
                                         fontWeight: FontWeight.w600,
@@ -295,7 +299,9 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                             children: [
                               TextWidget(
                                 text: 'sale_rate',
-                                textColor: AppColors.grey400.withOpacity(0.8),
+                                textColor: AppColors.grey400.withValues(
+                                  alpha: 0.8,
+                                ),
                                 fontSize: 11.sp,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -325,8 +331,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
                                 TextWidget(
                                   text: 'history',
 
-                                  textColor: AppColors.blackColor.withOpacity(
-                                    0.7,
+                                  textColor: AppColors.blackColor.withValues(
+                                    alpha: 0.7,
                                   ),
                                   fontSize: 14.5.sp,
                                   fontWeight: FontWeight.w700,
@@ -361,7 +367,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //           height: 182.h,
   //           borderRaduis: 14.r,
   //           bordercolor: AppColors.whiteColor,
-  //           containerColor: AppColors.redColor.withOpacity(1),
+  //           containerColor: AppColors.redColor.withValues(alpha : 1),
   //           child: Container(),
   //         ),
   //       ),
@@ -400,8 +406,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                       decoration: BoxDecoration(
   //                         borderRadius: BorderRadius.circular(30.r),
   //                         color: isActive
-  //                             ? AppColors.themeColor.withOpacity(0.1)
-  //                             : AppColors.redColor.withOpacity(0.1),
+  //                             ? AppColors.themeColor.withValues(alpha : 0.1)
+  //                             : AppColors.redColor.withValues(alpha : 0.1),
   //                       ),
   //                       child: Center(
   //                         child: Padding(
@@ -412,8 +418,8 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           child: TextWidget(
   //                             text: isActive ? 'IN STOCK' : 'OUT OF STOCK',
   //                             textColor: isActive
-  //                                 ? AppColors.themeColor.withOpacity(0.8)
-  //                                 : AppColors.redColor.withOpacity(0.8),
+  //                                 ? AppColors.themeColor.withValues(alpha : 0.8)
+  //                                 : AppColors.redColor.withValues(alpha : 0.8),
   //                             fontSize: 9.5.sp,
   //                             fontWeight: FontWeight.w700,
   //                           ),
@@ -435,7 +441,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           height: 40.h,
   //                           decoration: BoxDecoration(
   //                             borderRadius: BorderRadius.circular(12.r),
-  //                             color: AppColors.grey100.withOpacity(0.6),
+  //                             color: AppColors.grey100.withValues(alpha : 0.6),
   //                           ),
   //                           child: Center(
   //                             child: AppIcons.units(
@@ -450,7 +456,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           children: [
   //                             TextWidget(
   //                               text: 'TOTAL QTY',
-  //                               textColor: AppColors.grey400.withOpacity(0.8),
+  //                               textColor: AppColors.grey400.withValues(alpha : 0.8),
   //                               fontSize: 11.sp,
   //                               fontWeight: FontWeight.w600,
   //                             ),
@@ -485,7 +491,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           height: 40.h,
   //                           decoration: BoxDecoration(
   //                             borderRadius: BorderRadius.circular(12.r),
-  //                             color: AppColors.grey100.withOpacity(0.6),
+  //                             color: AppColors.grey100.withValues(alpha : 0.6),
   //                           ),
   //                           child: Center(
   //                             child: AppIcons.stock(
@@ -500,7 +506,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           children: [
   //                             TextWidget(
   //                               text: 'SOLD/STOCK',
-  //                               textColor: AppColors.grey400.withOpacity(0.8),
+  //                               textColor: AppColors.grey400.withValues(alpha : 0.8),
   //                               fontSize: 11.sp,
   //                               fontWeight: FontWeight.w600,
   //                             ),
@@ -511,7 +517,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                                   text: '10/30',
   //                                   textColor: isActive
   //                                       ? AppColors.blackColor
-  //                                       : AppColors.redColor.withOpacity(0.8),
+  //                                       : AppColors.redColor.withValues(alpha : 0.8),
   //                                   fontSize: 15.5.sp,
   //                                   fontWeight: FontWeight.w600,
   //                                 ),
@@ -537,7 +543,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           children: [
   //                             TextWidget(
   //                               text: 'Buy Rate',
-  //                               textColor: AppColors.grey400.withOpacity(0.8),
+  //                               textColor: AppColors.grey400.withValues(alpha : 0.8),
   //                               fontSize: 11.sp,
   //                               fontWeight: FontWeight.w600,
   //                             ),
@@ -565,7 +571,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
   //                           children: [
   //                             TextWidget(
   //                               text: 'Sale Rate',
-  //                               textColor: AppColors.grey400.withOpacity(0.8),
+  //                               textColor: AppColors.grey400.withValues(alpha : 0.8),
   //                               fontSize: 11.sp,
   //                               fontWeight: FontWeight.w600,
   //                             ),
@@ -664,7 +670,7 @@ class FoodStockPage extends GetView<FoodStockController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 

@@ -107,7 +107,9 @@ class SubscriptionPlansPage extends GetView<SubscriptionPlanController>
                               child: Container(
                                 width: double.infinity,
                                 height: double.infinity,
-                                color: AppColors.blackColor.withOpacity(0.5),
+                                color: AppColors.blackColor.withValues(
+                                  alpha: 0.5,
+                                ),
                                 child: Center(
                                   child: CircularProgressIndicator(
                                     color: AppColors.whiteColor,
@@ -211,7 +213,7 @@ class SubscriptionPlansPage extends GetView<SubscriptionPlanController>
                           // index == 4 || index == 5
                           //     ? Icon(
                           //         Icons.cancel,
-                          //         color: AppColors.redColor.withOpacity(0.8),
+                          //         color: AppColors.redColor.withValues(alpha : )(0.8),
                           //         size: 16.sp,
                           //       )
                           //     : Icon(

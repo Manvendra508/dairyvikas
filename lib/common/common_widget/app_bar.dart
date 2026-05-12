@@ -91,7 +91,7 @@ class DairyVikasAppBar extends StatelessWidget {
                   height: 35.h,
                   width: 38.w,
                   decoration: BoxDecoration(
-                    color: AppColors.themeColor.withOpacity(0.001),
+                    color: AppColors.themeColor.withValues(alpha: 0.001),
                     borderRadius: BorderRadius.circular(8.r),
                   ),
                   child: IconButton(

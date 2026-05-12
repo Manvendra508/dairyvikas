@@ -26,7 +26,7 @@ class DashboardPageNew extends GetView<DashboardController> {
             Container(
               width: 1.sw,
               height: 1.sh,
-              color: AppColors.themeColor.withOpacity(0.2),
+              color: AppColors.themeColor.withValues(alpha: 0.2),
 
               child: Column(
                 children: [

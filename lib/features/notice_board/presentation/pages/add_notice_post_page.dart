@@ -118,8 +118,8 @@ class AddNoticePostPage extends GetView<AddNoticePostController>
                                     child: TextWidget(
                                       fontSize: 12.sp,
                                       text: 'limited_reached',
-                                      textColor: AppColors.redColor.withOpacity(
-                                        0.8,
+                                      textColor: AppColors.redColor.withValues(
+                                        alpha: 0.8,
                                       ),
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -216,8 +216,8 @@ class AddNoticePostPage extends GetView<AddNoticePostController>
         buttonFontSize: 13.sp,
         shadowOpacity: 0.6,
         buttonFontWeight: FontWeight.w600,
-        buttonBorderColor: AppColors.redColor.withOpacity(0.8),
-        buttonColor: AppColors.redColor.withOpacity(0.8),
+        buttonBorderColor: AppColors.redColor.withValues(alpha: 0.8),
+        buttonColor: AppColors.redColor.withValues(alpha: 0.8),
         isLoading: _addNoticePostController.isDeleting,
       ),
     );
@@ -237,14 +237,14 @@ class AddNoticePostPage extends GetView<AddNoticePostController>
           decoration: BoxDecoration(
             border: Border.all(
               width: 0.8,
-              color: AppColors.themeColor.withOpacity(0.5),
+              color: AppColors.themeColor.withValues(alpha: 0.5),
             ),
-            color: AppColors.whiteColor.withOpacity(0.5),
+            color: AppColors.whiteColor.withValues(alpha: 0.5),
             borderRadius: BorderRadius.circular(8.r),
 
             boxShadow: [
               BoxShadow(
-                color: AppColors.shadowColor.withOpacity(1),
+                color: AppColors.shadowColor.withValues(alpha: 1),
                 blurRadius: 6,
                 spreadRadius: 1,
                 offset: Offset(0, 4),

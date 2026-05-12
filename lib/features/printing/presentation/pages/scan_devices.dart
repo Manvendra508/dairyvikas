@@ -136,12 +136,12 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
 
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6.r),
-                    color: AppColors.themeColor.withOpacity(0.1),
+                    color: AppColors.themeColor.withValues(alpha: 0.1),
                   ),
                   child: Center(
                     child: AppIcons.scan(
                       size: 18.sp,
-                      color: AppColors.themeColor.withOpacity(0.8),
+                      color: AppColors.themeColor.withValues(alpha: 0.8),
                     ),
                   ),
                 ),
@@ -210,12 +210,12 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
 
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6.r),
-                    color: AppColors.themeColor.withOpacity(0.1),
+                    color: AppColors.themeColor.withValues(alpha: 0.1),
                   ),
                   child: Center(
                     child: AppIcons.scan(
                       size: 18.sp,
-                      color: AppColors.themeColor.withOpacity(0.8),
+                      color: AppColors.themeColor.withValues(alpha: 0.8),
                     ),
                   ),
                 ),
@@ -252,8 +252,8 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
             buttonFontWeight: FontWeight.w600,
             title: 'remove',
             isLoading: false.obs,
-            buttonColor: AppColors.redColor.withOpacity(0.8),
-            buttonBorderColor: AppColors.redColor.withOpacity(0.8),
+            buttonColor: AppColors.redColor.withValues(alpha: 0.8),
+            buttonBorderColor: AppColors.redColor.withValues(alpha: 0.8),
           ),
         ),
         Positioned(
@@ -354,13 +354,13 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
               ? 'Stop Scan'
               : 'Scan Now',
           buttonColor: _scanDevicesController.isScanning.value
-              ? AppColors.redColor.withOpacity(0.8)
+              ? AppColors.redColor.withValues(alpha: 0.8)
               : AppColors.themeColor,
           shadowOpacity: 0.6,
           buttonFontWeight: FontWeight.w600,
           isLoading: false.obs,
           buttonBorderColor: _scanDevicesController.isScanning.value
-              ? AppColors.redColor.withOpacity(0.8)
+              ? AppColors.redColor.withValues(alpha: 0.8)
               : AppColors.themeColor,
         ),
       ),

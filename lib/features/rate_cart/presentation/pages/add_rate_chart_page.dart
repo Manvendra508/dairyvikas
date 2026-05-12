@@ -632,7 +632,7 @@ class AddRateChartPage extends GetView<AddRateChartController>
             height: 30.h,
             padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 7.w),
             decoration: BoxDecoration(
-              color: AppColors.themeColor.withOpacity(0.06),
+              color: AppColors.themeColor.withValues(alpha: 0.06),
               borderRadius: BorderRadius.circular(6.r),
               border: Border.all(
                 width: 0.25,
@@ -722,7 +722,7 @@ class AddRateChartPage extends GetView<AddRateChartController>
           height: 30.h,
           padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 7.w),
           decoration: BoxDecoration(
-            color: AppColors.themeColor.withOpacity(0.06),
+            color: AppColors.themeColor.withValues(alpha: 0.06),
             borderRadius: BorderRadius.circular(6.r),
             border: Border.all(width: 0.25, color: AppColors.themeColor),
           ),

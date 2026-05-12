@@ -36,8 +36,8 @@ class MessageBox extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: isError
-                          ? AppColors.redColor.withOpacity(0.12)
-                          : AppColors.darkgreenColor.withOpacity(0.12),
+                          ? AppColors.redColor.withValues(alpha: 0.12)
+                          : AppColors.darkgreenColor.withValues(alpha: 0.12),
                       border: Border.all(
                         width: 0.6,
                         color: AppColors.whiteColor,

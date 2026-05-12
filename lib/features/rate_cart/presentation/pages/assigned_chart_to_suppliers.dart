@@ -245,7 +245,7 @@ class AssignedChartToSuppliers extends GetView<AssignChartToSuppliersController>
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -434,7 +434,7 @@ class AssignedChartToSuppliers extends GetView<AssignChartToSuppliersController>
           .selectSingleSuppliersToAssignRatechart(supplier),
       child: CommonContainer(
         containerColor: supplier.isSelected.value
-            ? AppColors.themeColor.withOpacity(0.05)
+            ? AppColors.themeColor.withValues(alpha: 0.05)
             : AppColors.whiteColor,
 
         margin: EdgeInsets.only(top: 7.h),
@@ -457,7 +457,7 @@ class AssignedChartToSuppliers extends GetView<AssignChartToSuppliersController>
                         height: 40.w,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: AppColors.themeColor.withOpacity(0.06),
+                          color: AppColors.themeColor.withValues(alpha: 0.06),
                           border: Border.all(
                             width: 0.6,
                             color: AppColors.themeColor,
@@ -535,7 +535,7 @@ class AssignedChartToSuppliers extends GetView<AssignChartToSuppliersController>
           .selectSingleSuppliersToUnAssignRatechart(supplier),
       child: CommonContainer(
         containerColor: supplier.isSelected.value
-            ? AppColors.themeColor.withOpacity(0.06)
+            ? AppColors.themeColor.withValues(alpha: 0.06)
             : AppColors.whiteColor,
 
         margin: EdgeInsets.only(top: 7.h, left: 7.w, right: 7.w),
@@ -636,10 +636,10 @@ class AssignedChartToSuppliers extends GetView<AssignChartToSuppliersController>
           buttonHeight: 29.h,
           title: 'unassign',
           buttonColor: showEnable.value
-              ? AppColors.redColor.withOpacity(0.8)
+              ? AppColors.redColor.withValues(alpha: 0.8)
               : AppColors.grey200,
           buttonBorderColor: showEnable.value
-              ? AppColors.redColor.withOpacity(0.8)
+              ? AppColors.redColor.withValues(alpha: 0.8)
               : AppColors.grey200,
           shadowOpacity: 0.6,
           buttonFontWeight: FontWeight.w600,

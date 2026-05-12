@@ -348,7 +348,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
                 height: 120,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.redColor.withOpacity(0.1),
+                  color: AppColors.redColor.withValues(alpha: 0.1),
                 ),
                 child: Center(
                   child: Icon(
@@ -536,11 +536,11 @@ class PaymentPage extends GetView<PaymentCotnroller> {
           height: 70.h,
           margin: EdgeInsets.symmetric(horizontal: 10.w),
           decoration: BoxDecoration(
-            color: AppColors.themeColor.withOpacity(0.1),
+            color: AppColors.themeColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(10.r),
             border: Border.all(
               width: 0.3,
-              color: AppColors.themeColor.withOpacity(0.6),
+              color: AppColors.themeColor.withValues(alpha: 0.6),
             ),
           ),
           child: Padding(
@@ -555,7 +555,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
                       height: 35.h,
                       margin: EdgeInsets.symmetric(horizontal: 1.w),
                       decoration: BoxDecoration(
-                        color: AppColors.themeColor.withOpacity(0.1),
+                        color: AppColors.themeColor.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(10.r),
                       ),
                       child: Center(
@@ -589,7 +589,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
                   ],
                 ),
                 AppIcons.arrowForward(
-                  color: AppColors.themeColor.withOpacity(0.8),
+                  color: AppColors.themeColor.withValues(alpha: 0.8),
                   size: 12.sp,
                 ),
               ],
@@ -644,7 +644,7 @@ class PaymentPage extends GetView<PaymentCotnroller> {
                 height: 18.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12.r),
-                  color: AppColors.greenColor.withOpacity(0.1),
+                  color: AppColors.greenColor.withValues(alpha: 0.1),
                 ),
                 child: Center(
                   child: TextWidget(

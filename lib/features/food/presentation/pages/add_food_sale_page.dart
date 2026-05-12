@@ -240,7 +240,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                   width: 100.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.r),
-                    color: AppColors.grey500.withOpacity(0.1),
+                    color: AppColors.grey500.withValues(alpha: 0.1),
                   ),
                   child: Center(
                     child: Padding(
@@ -326,7 +326,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                     height: 20.h,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5.r),
-                      color: AppColors.themeColor.withOpacity(0.1),
+                      color: AppColors.themeColor.withValues(alpha: 0.1),
                     ),
                     child: Center(
                       child: Padding(
@@ -357,7 +357,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                   '${_addFoodSaleController.searchedSupplierBuyer.name} is inactive.',
               fontSize: 10.sp,
               fontWeight: FontWeight.w500,
-              textColor: AppColors.redColor.withOpacity(0.8),
+              textColor: AppColors.redColor.withValues(alpha: 0.8),
             ),
           ),
         ),
@@ -379,7 +379,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -432,7 +432,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -550,7 +550,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
       child: CommonContainer(
         containerColor: supplierBuyer.status
             ? AppColors.whiteColor
-            : AppColors.grey200.withOpacity(0.5),
+            : AppColors.grey200.withValues(alpha: 0.5),
 
         margin: EdgeInsets.only(top: 4.h, left: 0.w, right: 0.w),
         height: 45.h,
@@ -613,8 +613,8 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.r),
                       color: supplierBuyer.type == 'ms'
-                          ? AppColors.themeColor.withOpacity(0.1)
-                          : AppColors.redColor.withOpacity(0.1),
+                          ? AppColors.themeColor.withValues(alpha: 0.1)
+                          : AppColors.redColor.withValues(alpha: 0.1),
                     ),
                     child: Center(
                       child: Padding(
@@ -634,7 +634,9 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w600,
                                 text: 'inactive',
-                                textColor: AppColors.redColor.withOpacity(0.4),
+                                textColor: AppColors.redColor.withValues(
+                                  alpha: 0.4,
+                                ),
                               ),
                       ),
                     ),
@@ -661,7 +663,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
       child: CommonContainer(
         containerColor: !isOutOfStock
             ? AppColors.whiteColor
-            : AppColors.grey200.withOpacity(0.5),
+            : AppColors.grey200.withValues(alpha: 0.5),
 
         margin: EdgeInsets.only(top: 4.h, left: 0.w, right: 0.w),
         height: 45.h,
@@ -706,8 +708,8 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.r),
                       color: !isOutOfStock
-                          ? AppColors.themeColor.withOpacity(0.1)
-                          : AppColors.redColor.withOpacity(0.1),
+                          ? AppColors.themeColor.withValues(alpha: 0.1)
+                          : AppColors.redColor.withValues(alpha: 0.1),
                     ),
                     child: Center(
                       child: Padding(
@@ -717,7 +719,7 @@ class AddFoodSalePage extends GetView<AddFoodSaleController> with CommonMixin {
                           fontWeight: FontWeight.w600,
                           text: isOutOfStock ? 'Out of Stock' : 'In Stock',
                           textColor: isOutOfStock
-                              ? AppColors.redColor.withOpacity(0.4)
+                              ? AppColors.redColor.withValues(alpha: 0.4)
                               : AppColors.themeColor,
                         ),
                       ),

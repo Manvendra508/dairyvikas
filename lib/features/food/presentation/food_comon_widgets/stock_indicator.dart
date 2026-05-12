@@ -28,7 +28,7 @@ class StockLineIndicator extends StatelessWidget {
         height: height,
         child: LinearProgressIndicator(
           value: percent,
-          backgroundColor: inactiveColor.withOpacity(0.2),
+          backgroundColor: inactiveColor.withValues(alpha: 0.2),
           valueColor: AlwaysStoppedAnimation(activeColor),
         ),
       ),

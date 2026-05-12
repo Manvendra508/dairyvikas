@@ -123,7 +123,7 @@ class FoodSalesPage extends GetView<FoodSalesController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 
@@ -169,11 +169,11 @@ class FoodSalesPage extends GetView<FoodSalesController> with CommonMixin {
               width: 1.sw,
               height: 42.h,
               decoration: BoxDecoration(
-                color: AppColors.grey400.withOpacity(0.05),
+                color: AppColors.grey400.withValues(alpha: 0.05),
                 border: Border.symmetric(
                   horizontal: BorderSide(
                     width: 0.4,
-                    color: AppColors.themeColor.withOpacity(0.2),
+                    color: AppColors.themeColor.withValues(alpha: 0.2),
                   ),
                 ),
               ),
@@ -193,7 +193,9 @@ class FoodSalesPage extends GetView<FoodSalesController> with CommonMixin {
                               height: 32.h,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: AppColors.themeColor.withOpacity(0.05),
+                                color: AppColors.themeColor.withValues(
+                                  alpha: 0.05,
+                                ),
                               ),
                               child: Center(
                                 child: TextWidget(
@@ -273,7 +275,9 @@ class FoodSalesPage extends GetView<FoodSalesController> with CommonMixin {
                         children: [
                           TextWidget(
                             text: sale.saleItemDetails.itemName,
-                            textColor: AppColors.blackColor.withOpacity(0.8),
+                            textColor: AppColors.blackColor.withValues(
+                              alpha: 0.8,
+                            ),
 
                             fontWeight: FontWeight.w600,
                           ),
@@ -303,7 +307,9 @@ class FoodSalesPage extends GetView<FoodSalesController> with CommonMixin {
                         children: [
                           TextWidget(
                             text: '${sale.quantity}kg × ₹${sale.sellingPrice}',
-                            textColor: AppColors.redColor.withOpacity(0.8),
+                            textColor: AppColors.redColor.withValues(
+                              alpha: 0.8,
+                            ),
                             fontSize: 10.5.sp,
                             fontWeight: FontWeight.w600,
                           ),

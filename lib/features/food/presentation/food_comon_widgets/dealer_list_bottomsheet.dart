@@ -28,7 +28,7 @@ class DealerListBottomSheet extends StatelessWidget {
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),

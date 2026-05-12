@@ -31,8 +31,8 @@ class AppUpdateWidget extends StatelessWidget {
 
               gradient: RadialGradient(
                 colors: [
-                  AppColors.secondaryDark.withOpacity(0.08),
-                  AppColors.whiteColor.withOpacity(0.1),
+                  AppColors.secondaryDark.withValues(alpha: 0.08),
+                  AppColors.whiteColor.withValues(alpha: 0.1),
                 ],
                 radius: 0.7,
               ),
@@ -79,7 +79,7 @@ class AppUpdateWidget extends StatelessWidget {
           //     width: 100.w,
           //     decoration: BoxDecoration(
           //       borderRadius: BorderRadius.circular(30.r),
-          //       color: AppColors.whiteColor.withOpacity(0.1),
+          //       color: AppColors.whiteColor.withValues(alpha : )(0.1),
           //     ),
           //     child: Center(
           //       child: TextWidget(

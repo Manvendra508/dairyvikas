@@ -116,7 +116,7 @@ class ProfileController extends GetxController
       "dec": "Logout from your account",
       "showArrow": true,
       "icon": AssetsPaths.logout,
-      "color": AppColors.redColor.withOpacity(0.8),
+      "color": AppColors.redColor.withValues(alpha: 0.8),
       "show": true,
     },
   ];
@@ -233,7 +233,7 @@ class ProfileController extends GetxController
   Color getProgressColor(double progress) {
     if (progress > 0.4) return AppColors.themeColor;
     if (progress > 0.1) return AppColors.secondaryDark;
-    return AppColors.redColor.withOpacity(0.8);
+    return AppColors.redColor.withValues(alpha: 0.8);
   }
 
   showLogoutSheet(

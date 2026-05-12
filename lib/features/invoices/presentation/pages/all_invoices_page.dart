@@ -157,7 +157,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
       width: 1.sw,
       height: 0.6.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.1),
+        color: AppColors.themeColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -203,7 +203,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                                       .currentDateRangeIndex
                                       .value ==
                                   index
-                              ? AppColors.themeColor.withOpacity(0.02)
+                              ? AppColors.themeColor.withValues(alpha: 0.02)
                               : AppColors.whiteColor,
                           border: Border.all(
                             width: 0.4,
@@ -281,7 +281,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                         height: 40.w,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: AppColors.themeColor.withOpacity(0.06),
+                          color: AppColors.themeColor.withValues(alpha: 0.06),
                           // border: Border.all(width: 0.6, color: AppColors.themeColor),
                         ),
                         child: Center(
@@ -422,7 +422,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                   height: 22.h,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.warning.withOpacity(0.3),
+                    color: AppColors.warning.withValues(alpha: 0.3),
                   ),
                   child: Center(
                     child: Icon(
@@ -439,7 +439,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                   height: 20.h,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.themeColor.withOpacity(0.8),
+                    color: AppColors.themeColor.withValues(alpha: 0.8),
                   ),
                   child: Center(
                     child: Icon(
@@ -464,7 +464,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
           height: 25.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4.r),
-            color: AppColors.themeColor.withOpacity(0.1),
+            color: AppColors.themeColor.withValues(alpha: 0.1),
             border: Border.all(width: 0.5, color: AppColors.themeColor),
           ),
           child: Padding(
@@ -498,7 +498,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
           height: 25.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4.r),
-            color: AppColors.blue.withOpacity(0.1),
+            color: AppColors.blue.withValues(alpha: 0.1),
             border: Border.all(width: 0.5, color: AppColors.blue),
           ),
           child: Padding(
@@ -528,7 +528,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
           height: 25.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4.r),
-            color: AppColors.blue.withOpacity(0.1),
+            color: AppColors.blue.withValues(alpha: 0.1),
             border: Border.all(width: 0.5, color: AppColors.blue),
           ),
           child: Padding(
@@ -565,7 +565,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 
@@ -633,7 +633,7 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
@@ -641,14 +641,14 @@ class AllInvoicesPage extends GetView<AllInvoiceController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
 

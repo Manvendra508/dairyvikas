@@ -71,10 +71,12 @@ class SelectBoolOptionWidget extends StatelessWidget {
                     title: 'cancel',
                     buttonFontWeight: FontWeight.w500,
                     isLoading: false.obs,
-                    buttonBorderColor: AppColors.redColor.withOpacity(0.8),
+                    buttonBorderColor: AppColors.redColor.withValues(
+                      alpha: 0.8,
+                    ),
                     buttonBorderRaduids: 4.r,
                     buttonColor: AppColors.whiteColor,
-                    buttonTextColor: AppColors.redColor.withOpacity(0.8),
+                    buttonTextColor: AppColors.redColor.withValues(alpha: 0.8),
                   ),
                 ),
                 InkWell(

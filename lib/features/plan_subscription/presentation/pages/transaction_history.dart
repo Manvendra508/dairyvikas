@@ -112,7 +112,7 @@ class TransactionHistory extends GetView<TransactionHistoryController>
                         borderRadius: BorderRadius.circular(12.r),
                         color: _transactionHistoryController
                             .transactionColor(transaction.status)
-                            .withOpacity(0.1),
+                            .withValues(alpha: 0.1),
                       ),
                       child: Center(
                         child: AppIcons.premium2(
@@ -187,7 +187,7 @@ class TransactionHistory extends GetView<TransactionHistoryController>
                         borderRadius: BorderRadius.circular(17.r),
                         color: _transactionHistoryController
                             .transactionColor(transaction.status)
-                            .withOpacity(0.1),
+                            .withValues(alpha: 0.1),
                       ),
                       child: Center(
                         child: TextWidget(
@@ -275,7 +275,7 @@ class TransactionHistory extends GetView<TransactionHistoryController>
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 

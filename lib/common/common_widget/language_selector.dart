@@ -138,7 +138,7 @@ class _LanguagePageState extends State<LanguagePage> {
                   : AppColors.darkBorder,
             ),
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.1)
+                ? AppColors.themeColor.withValues(alpha: 0.1)
                 : null,
           ),
           child: Padding(

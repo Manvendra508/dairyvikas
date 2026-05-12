@@ -167,7 +167,7 @@ class MilkBuyersPage extends GetView<MilkBuyersController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
@@ -175,14 +175,14 @@ class MilkBuyersPage extends GetView<MilkBuyersController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
 
@@ -240,7 +240,7 @@ class MilkBuyersPage extends GetView<MilkBuyersController> with CommonMixin {
                 text: 'inactive:',
                 fontSize: 11.5.sp,
                 fontWeight: FontWeight.w600,
-                textColor: AppColors.redColor.withOpacity(0.7),
+                textColor: AppColors.redColor.withValues(alpha: 0.7),
               ),
               Gap.horizentalGap(5),
               TextWidget(
@@ -409,8 +409,8 @@ class MilkBuyersPage extends GetView<MilkBuyersController> with CommonMixin {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30.r),
                             color: isActive
-                                ? AppColors.themeColor.withOpacity(0.1)
-                                : AppColors.redColor.withOpacity(0.1),
+                                ? AppColors.themeColor.withValues(alpha: 0.1)
+                                : AppColors.redColor.withValues(alpha: 0.1),
                           ),
                           child: Center(
                             child: Padding(
@@ -520,7 +520,7 @@ class MilkBuyersPage extends GetView<MilkBuyersController> with CommonMixin {
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 

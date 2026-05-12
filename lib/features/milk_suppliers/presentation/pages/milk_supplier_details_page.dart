@@ -141,7 +141,7 @@ class MilkSupplierDetails extends GetView<MilkSupplierDetailsController>
                       width: 1.sw,
                       height: 40.h,
                       containerColor: AppColors.whiteColor,
-                      bordercolor: AppColors.redColor.withOpacity(0.7),
+                      bordercolor: AppColors.redColor.withValues(alpha: 0.7),
 
                       margin: EdgeInsets.symmetric(
                         horizontal: 10.w,
@@ -155,7 +155,7 @@ class MilkSupplierDetails extends GetView<MilkSupplierDetailsController>
                             height: 12,
                             child: CircularProgressIndicator(
                               strokeWidth: 1.5,
-                              color: AppColors.redColor.withOpacity(0.8),
+                              color: AppColors.redColor.withValues(alpha: 0.8),
                             ),
                           ),
                           child: TextWidget(
@@ -188,7 +188,7 @@ class MilkSupplierDetails extends GetView<MilkSupplierDetailsController>
             height: 35.h,
             width: 1.sw,
             decoration: BoxDecoration(
-              color: AppColors.themeColor.withOpacity(0.9),
+              color: AppColors.themeColor.withValues(alpha: 0.9),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(10.r),
                 topRight: Radius.circular(10.r),

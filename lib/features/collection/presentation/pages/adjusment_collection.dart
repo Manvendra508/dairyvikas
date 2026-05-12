@@ -213,7 +213,7 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
       width: 1.sw,
       height: 0.6.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.1),
+        color: AppColors.themeColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -260,7 +260,7 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
                                       .currentDateRangeIndex
                                       .value ==
                                   index
-                              ? AppColors.themeColor.withOpacity(0.02)
+                              ? AppColors.themeColor.withValues(alpha: 0.02)
                               : AppColors.whiteColor,
                           border: Border.all(
                             width: 0.4,
@@ -329,7 +329,7 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
                         width: 0.5,
                         color:
                             _adjustCollectionController.isSupplierInActive.value
-                            ? AppColors.redColor.withOpacity(0.8)
+                            ? AppColors.redColor.withValues(alpha: 0.8)
                             : AppColors.themeColor,
                       ),
                     ),
@@ -355,7 +355,9 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
                               height: 25.h,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5.r),
-                                color: AppColors.themeColor.withOpacity(0.1),
+                                color: AppColors.themeColor.withValues(
+                                  alpha: 0.1,
+                                ),
                               ),
                               child: Center(
                                 child: Padding(
@@ -436,7 +438,7 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
                 }),
                 fontSize: 10.sp,
                 fontWeight: FontWeight.w500,
-                textColor: AppColors.redColor.withOpacity(0.8),
+                textColor: AppColors.redColor.withValues(alpha: 0.8),
               ),
             ),
           ),
@@ -476,7 +478,7 @@ class AdjustCollectionPage extends GetView<AdjustCollectionController>
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),

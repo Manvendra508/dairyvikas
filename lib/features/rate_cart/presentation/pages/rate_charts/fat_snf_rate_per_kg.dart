@@ -538,7 +538,7 @@ class RateChartScreenState extends State<FatSnfRatePerKg> with CommonMixin {
           width: 1.sw / 2.2,
 
           decoration: BoxDecoration(
-            color: AppColors.blackColor.withOpacity(0.1),
+            color: AppColors.blackColor.withValues(alpha: 0.1),
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(4.r),
               bottomLeft: Radius.circular(4.r),

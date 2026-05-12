@@ -76,8 +76,8 @@ class ExcelSelectOption extends StatelessWidget {
                         child: AppButton(
                           buttonBorderRaduids: 5.r,
 
-                          buttonBorderColor: AppColors.themeColor.withOpacity(
-                            0.7,
+                          buttonBorderColor: AppColors.themeColor.withValues(
+                            alpha: 0.7,
                           ),
                           buttonColor: AppColors.whiteColor,
                           buttonTextColor: AppColors.themeColor,

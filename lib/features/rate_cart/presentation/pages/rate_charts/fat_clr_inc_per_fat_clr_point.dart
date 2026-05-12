@@ -641,7 +641,7 @@ class IncreaseFatClrChartScreenState
 
           padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 7.w),
           decoration: BoxDecoration(
-            color: AppColors.whiteColor.withOpacity(0.06),
+            color: AppColors.whiteColor.withValues(alpha: 0.06),
             borderRadius: BorderRadius.circular(6.r),
             border: Border.all(width: 0.8, color: AppColors.lightBorder),
           ),

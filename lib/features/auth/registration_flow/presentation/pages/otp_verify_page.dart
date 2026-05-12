@@ -174,7 +174,7 @@ class OtpVerifyPage extends GetView<OtpVerifyController> {
 
     final submittedPinTheme = defaultPinTheme.copyWith(
       decoration: defaultPinTheme.decoration!.copyWith(
-        color: AppColors.grey300.withOpacity(0.1),
+        color: AppColors.grey300.withValues(alpha: 0.1),
       ),
     );
 

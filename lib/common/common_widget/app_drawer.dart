@@ -173,10 +173,10 @@ class _DairyVikasAppDrawerState extends State<DairyVikasAppDrawer>
                       shadowOpacity: 0.4,
                       buttonColor: isDeleteProcessed.value
                           ? AppColors.grey400
-                          : AppColors.redColor.withOpacity(0.8),
+                          : AppColors.redColor.withValues(alpha: 0.8),
                       buttonBorderColor: isDeleteProcessed.value
                           ? AppColors.grey400
-                          : AppColors.redColor.withOpacity(0.8),
+                          : AppColors.redColor.withValues(alpha: 0.8),
                     ),
                   ),
                 ),
@@ -223,7 +223,9 @@ class _DairyVikasAppDrawerState extends State<DairyVikasAppDrawer>
                     isLoading: false.obs,
                     buttonColor: AppColors.whiteColor,
                     shadowOpacity: 0.4,
-                    buttonBorderColor: AppColors.redColor.withOpacity(0.7),
+                    buttonBorderColor: AppColors.redColor.withValues(
+                      alpha: 0.7,
+                    ),
                   ),
                 ),
                 Gap.verticalGap(10),

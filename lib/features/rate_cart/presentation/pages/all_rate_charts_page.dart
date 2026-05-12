@@ -187,7 +187,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
       width: 1.sw,
 
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -222,7 +222,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
               children: List.generate(
                 1,
                 (index) => CommonContainer(
-                  containerColor: AppColors.themeColor.withOpacity(0.03),
+                  containerColor: AppColors.themeColor.withValues(alpha: 0.03),
                   bordercolor: AppColors.themeColor,
                   margin: EdgeInsets.only(top: 7.h),
                   height: 50.h,
@@ -310,11 +310,11 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
                 buttonFontWeight: FontWeight.w600,
                 isLoading: false.obs,
                 buttonBorderColor: chart.dairyCount == 1
-                    ? AppColors.redColor.withOpacity(0.8)
+                    ? AppColors.redColor.withValues(alpha: 0.8)
                     : AppColors.themeColor,
                 buttonBorderRaduids: 8.r,
                 buttonColor: chart.dairyCount == 1
-                    ? AppColors.redColor.withOpacity(0.8)
+                    ? AppColors.redColor.withValues(alpha: 0.8)
                     : AppColors.themeColor,
                 buttonTextColor: AppColors.whiteColor,
               ),
@@ -341,7 +341,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
             border: Border.all(
               width: 0.8,
               color: _allRateChartsController.hasShiftDropDownNotSelected.value
-                  ? AppColors.redColor.withOpacity(0.8)
+                  ? AppColors.redColor.withValues(alpha: 0.8)
                   : AppColors.lightBorder,
             ),
           ),
@@ -415,7 +415,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.2)
+                ? AppColors.themeColor.withValues(alpha: 0.2)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(30.r),
 
@@ -458,7 +458,7 @@ class AllRateChartsPage extends GetView<AllRateChartsController>
           ),
           decoration: BoxDecoration(
             color: isSelected.value
-                ? AppColors.themeColor.withOpacity(0.7)
+                ? AppColors.themeColor.withValues(alpha: 0.7)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(8.r),
 

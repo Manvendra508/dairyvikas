@@ -31,7 +31,7 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: true,
-        // backgroundColor: AppColors.whiteColor.withOpacity(0.98),
+        // backgroundColor: AppColors.whiteColor.withValues(alpha : 0.98),
         bottomNavigationBar: _buildTotalSummaryData(),
         body: Padding(
           padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 8.w),
@@ -195,7 +195,7 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
                           height: 22.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.themeColor.withOpacity(0.8),
+                            color: AppColors.themeColor.withValues(alpha: 0.8),
                           ),
                           child: Center(
                             child: AnimatedRotation(
@@ -265,7 +265,7 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
                                 ),
                                 _buildSummaryDataText(
                                   '₹0.0',
-                                  AppColors.redColor.withOpacity(0.8),
+                                  AppColors.redColor.withValues(alpha: 0.8),
                                   fontweight: FontWeight.w600,
                                   13.sp,
                                 ),
@@ -340,8 +340,8 @@ class InvoiceDetailsPage extends GetView<InvoiceDetailsController>
         title: 'remove',
         buttonFontSize: 12.sp,
         shadowOpacity: 0.6,
-        buttonBorderColor: AppColors.redColor.withOpacity(0.8),
-        buttonColor: AppColors.redColor.withOpacity(0.8),
+        buttonBorderColor: AppColors.redColor.withValues(alpha: 0.8),
+        buttonColor: AppColors.redColor.withValues(alpha: 0.8),
         buttonFontWeight: FontWeight.w600,
         isLoading: false.obs,
       ),

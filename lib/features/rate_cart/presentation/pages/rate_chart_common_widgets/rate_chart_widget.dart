@@ -86,7 +86,9 @@ class RateChartWidget extends StatelessWidget {
                                         : ' (BM)',
                                     fontSize: 13.sp,
                                     textColor: rateChart.milkTypeId == 1
-                                        ? AppColors.redColor.withOpacity(0.7)
+                                        ? AppColors.redColor.withValues(
+                                            alpha: 0.7,
+                                          )
                                         : AppColors.blue,
                                     fontWeight: FontWeight.w600,
                                   ),

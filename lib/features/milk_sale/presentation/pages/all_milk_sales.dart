@@ -171,7 +171,7 @@ class AllMilkSalesPages extends GetView<AllMilkSalesControllers>
               height: 35.h,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: color.withOpacity(0.13),
+                color: color.withValues(alpha: 0.13),
               ),
               child: Center(child: icon),
             ),
@@ -228,7 +228,7 @@ class AllMilkSalesPages extends GetView<AllMilkSalesControllers>
                           height: 22.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.themeColor.withOpacity(0.8),
+                            color: AppColors.themeColor.withValues(alpha: 0.8),
                           ),
                           child: Center(
                             child: AnimatedRotation(
@@ -536,7 +536,7 @@ class AllMilkSalesPages extends GetView<AllMilkSalesControllers>
                 text: 'present:',
                 fontSize: 11.5.sp,
                 fontWeight: FontWeight.w600,
-                textColor: AppColors.redColor.withOpacity(0.7),
+                textColor: AppColors.redColor.withValues(alpha: 0.7),
               ),
               Gap.horizentalGap(5),
               TextWidget(

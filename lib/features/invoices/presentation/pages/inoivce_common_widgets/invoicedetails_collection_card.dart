@@ -75,7 +75,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
                         height: 20.h,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30.r),
-                          color: AppColors.whiteColor.withOpacity(0.09),
+                          color: AppColors.whiteColor.withValues(alpha: 0.09),
                         ),
                         child: Center(
                           child: TextWidget(
@@ -112,7 +112,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
           Container(
             height: 30.h,
             decoration: BoxDecoration(
-              color: AppColors.grey100.withOpacity(0.6),
+              color: AppColors.grey100.withValues(alpha: 0.6),
               border: Border(
                 bottom: BorderSide(width: 0.7, color: AppColors.grey200),
               ),
@@ -166,7 +166,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
                     margin: EdgeInsets.only(left: 2.w, right: 4.w),
                     height: 30.h,
                     decoration: BoxDecoration(
-                      color: AppColors.whiteColor.withOpacity(0.6),
+                      color: AppColors.whiteColor.withValues(alpha: 0.6),
                       border: Border(
                         bottom: BorderSide(
                           width: 0.7,
@@ -259,7 +259,9 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
 
     return Container(
       height: 30.h,
-      decoration: BoxDecoration(color: AppColors.themeColor.withOpacity(0.08)),
+      decoration: BoxDecoration(
+        color: AppColors.themeColor.withValues(alpha: 0.08),
+      ),
       child: Row(
         children: [
           Expanded(
@@ -328,7 +330,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
   //               margin: EdgeInsets.only(left: 2.w, right: 4.w),
   //               height: 30.h,
   //               decoration: BoxDecoration(
-  //                 color: AppColors.whiteColor.withOpacity(0.6),
+  //                 color: AppColors.whiteColor.withValues(alpha : 0.6),
   //                 border: Border(
   //                   bottom: BorderSide(width: 0.7, color: AppColors.grey200),
   //                 ),
@@ -405,7 +407,7 @@ class InvoicedetailsCollectionCard extends StatelessWidget with CommonMixin {
     return Container(
       height: 30.h,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.08),
+        color: AppColors.themeColor.withValues(alpha: 0.08),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(8.r),
           bottomRight: Radius.circular(8.r),

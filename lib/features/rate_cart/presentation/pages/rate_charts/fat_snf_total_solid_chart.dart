@@ -216,7 +216,7 @@ class TotalSolidChartFatSnfPageState extends State<TotalSolidChartFatSnfPage>
           width: 1.sw,
 
           decoration: BoxDecoration(
-            color: AppColors.themeColor.withOpacity(0.8),
+            color: AppColors.themeColor.withValues(alpha: 0.8),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(4.r),
               topRight: Radius.circular(4.r),
@@ -261,7 +261,7 @@ class TotalSolidChartFatSnfPageState extends State<TotalSolidChartFatSnfPage>
           width: 1.sw,
 
           decoration: BoxDecoration(
-            color: AppColors.grey200.withOpacity(0.6),
+            color: AppColors.grey200.withValues(alpha: 0.6),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(4.r),
               bottomRight: Radius.circular(4.r),
@@ -362,7 +362,7 @@ class TotalSolidChartFatSnfPageState extends State<TotalSolidChartFatSnfPage>
       visible: (steps.length - 1) == index,
       replacement: AppIcons.remove(
         size: 13,
-        color: AppColors.grey200.withOpacity(0.1),
+        color: AppColors.grey200.withValues(alpha: 0.1),
       ),
       child: InkWell(
         onTap: () => _removeLastStep(),

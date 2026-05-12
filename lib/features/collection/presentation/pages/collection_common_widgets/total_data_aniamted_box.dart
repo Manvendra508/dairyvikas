@@ -99,7 +99,7 @@ class TotalDataAniamtedBox extends StatelessWidget {
                           height: 22.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.whiteColor.withOpacity(1),
+                            color: AppColors.whiteColor.withValues(alpha: 1),
                           ),
                           child: Center(
                             child: AnimatedRotation(

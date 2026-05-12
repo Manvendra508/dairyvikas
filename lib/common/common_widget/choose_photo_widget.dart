@@ -47,9 +47,9 @@ class ChoosePhotoWidget extends StatelessWidget with CommonMixin {
         width: 90.w,
         height: 35,
         decoration: BoxDecoration(
-          color: AppColors.darkgreenColor.withOpacity(0.1),
+          color: AppColors.darkgreenColor.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(4),
-          border: Border.all(width: 0.8, color: color.withOpacity(0.9)),
+          border: Border.all(width: 0.8, color: color.withValues(alpha: 0.9)),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -60,7 +60,7 @@ class ChoosePhotoWidget extends StatelessWidget with CommonMixin {
               text: title,
               fontWeight: FontWeight.w600,
               fontSize: 13.sp,
-              textColor: color.withOpacity(0.9),
+              textColor: color.withValues(alpha: 0.9),
             ),
           ],
         ),

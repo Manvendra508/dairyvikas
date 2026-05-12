@@ -201,10 +201,10 @@ class ProfilePage extends GetView<ProfileController> with CommonMixin {
               shadowOpacity: 0.4,
               buttonColor: _profileController.isDeleteProcessed.value
                   ? AppColors.grey400
-                  : AppColors.whiteColor.withOpacity(0.8),
+                  : AppColors.whiteColor.withValues(alpha: 0.8),
               buttonBorderColor: _profileController.isDeleteProcessed.value
                   ? AppColors.grey400
-                  : AppColors.grey800.withOpacity(0.8),
+                  : AppColors.grey800.withValues(alpha: 0.8),
             ),
           ),
         ),

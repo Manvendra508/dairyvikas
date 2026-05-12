@@ -42,7 +42,7 @@ mixin CommonMixin {
         margin: EdgeInsets.symmetric(horizontal: 10.w),
         decoration: BoxDecoration(
           color: isError
-              ? AppColors.redColor.withOpacity(0.8)
+              ? AppColors.redColor.withValues(alpha: 0.8)
               : backgroundColor ?? AppColors.themeColor,
           borderRadius: BorderRadius.circular(30),
         ),

@@ -149,7 +149,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
@@ -157,14 +157,14 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
 
@@ -220,7 +220,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                         height: 40.w,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.r),
-                          color: AppColors.themeColor.withOpacity(0.06),
+                          color: AppColors.themeColor.withValues(alpha: 0.06),
                           border: Border.all(
                             width: 0.6,
                             color: AppColors.whiteColor,
@@ -301,7 +301,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
                         height: 40.w,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.r),
-                          color: AppColors.whiteColor.withOpacity(0.06),
+                          color: AppColors.whiteColor.withValues(alpha: 0.06),
                           border: Border.all(
                             width: 0.6,
                             color: AppColors.whiteColor,
@@ -389,7 +389,7 @@ class AllItemsPage extends GetView<AllItemsController> with CommonMixin {
           width: 1.sw,
           height: 0.25.sh,
           decoration: BoxDecoration(
-            color: AppColors.themeColor.withOpacity(0.07),
+            color: AppColors.themeColor.withValues(alpha: 0.07),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(12.r),
               topRight: Radius.circular(12.r),

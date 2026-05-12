@@ -157,7 +157,9 @@ class RateChartDetailsPage extends GetView<RateChartDetailsController>
                                 height: 5.h,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: AppColors.voilate.withOpacity(0.8),
+                                  color: AppColors.voilate.withValues(
+                                    alpha: 0.8,
+                                  ),
                                 ),
                               ),
                               Gap.horizentalGap(8.w),
@@ -221,12 +223,12 @@ class RateChartDetailsPage extends GetView<RateChartDetailsController>
                                   buttonWidth: 70.w,
                                   buttonBorderRaduids: 4.r,
                                   buttonTextColor: AppColors.redColor
-                                      .withOpacity(0.8),
-                                  buttonColor: AppColors.redColor.withOpacity(
-                                    0.1,
+                                      .withValues(alpha: 0.8),
+                                  buttonColor: AppColors.redColor.withValues(
+                                    alpha: 0.1,
                                   ),
                                   buttonBorderColor: AppColors.redColor
-                                      .withOpacity(0.8),
+                                      .withValues(alpha: 0.8),
                                   shadowOpacity: 0.4,
                                   buttonFontWeight: FontWeight.w500,
                                 ),
@@ -245,8 +247,8 @@ class RateChartDetailsPage extends GetView<RateChartDetailsController>
                                 buttonWidth: 70.w,
                                 buttonBorderRaduids: 4.r,
                                 buttonTextColor: AppColors.themeColor,
-                                buttonColor: AppColors.themeColor.withOpacity(
-                                  0.1,
+                                buttonColor: AppColors.themeColor.withValues(
+                                  alpha: 0.1,
                                 ),
                                 buttonBorderColor: AppColors.themeColor,
                                 shadowOpacity: 0.4,
@@ -324,8 +326,8 @@ class RateChartDetailsPage extends GetView<RateChartDetailsController>
 
         buttonHeight: 30.h,
         title: 'inactive',
-        buttonColor: AppColors.redColor.withOpacity(0.8),
-        buttonBorderColor: AppColors.redColor.withOpacity(0.8),
+        buttonColor: AppColors.redColor.withValues(alpha: 0.8),
+        buttonBorderColor: AppColors.redColor.withValues(alpha: 0.8),
         shadowOpacity: 0.6,
         buttonFontWeight: FontWeight.w600,
         isLoading: false.obs,

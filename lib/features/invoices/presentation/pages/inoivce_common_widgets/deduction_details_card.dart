@@ -52,7 +52,7 @@ class DeductionDetailsCard extends StatelessWidget {
           Container(
             height: 30.h,
             decoration: BoxDecoration(
-              color: AppColors.grey100.withOpacity(0.6),
+              color: AppColors.grey100.withValues(alpha: 0.6),
               border: Border(
                 bottom: BorderSide(width: 0.7, color: AppColors.grey200),
               ),
@@ -101,7 +101,7 @@ class DeductionDetailsCard extends StatelessWidget {
                 margin: EdgeInsets.only(left: 2.w, right: 4.w),
                 height: 30.h,
                 decoration: BoxDecoration(
-                  color: AppColors.whiteColor.withOpacity(0.6),
+                  color: AppColors.whiteColor.withValues(alpha: 0.6),
                   border: Border(
                     bottom: BorderSide(width: 0.7, color: AppColors.grey200),
                   ),

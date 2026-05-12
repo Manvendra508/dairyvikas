@@ -162,7 +162,7 @@ class SearchInAppPage extends GetView<SearchInAppController> with CommonMixin {
                     icon: TextWidget(
                       text: 'Clear',
                       fontSize: 14.sp,
-                      textColor: AppColors.redColor.withOpacity(0.8),
+                      textColor: AppColors.redColor.withValues(alpha: 0.8),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -264,7 +264,7 @@ class SearchInAppPage extends GetView<SearchInAppController> with CommonMixin {
                       icon: TextWidget(
                         text: 'Clear',
                         fontSize: 14.sp,
-                        textColor: AppColors.redColor.withOpacity(0.8),
+                        textColor: AppColors.redColor.withValues(alpha: 0.8),
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -394,7 +394,7 @@ class SearchInAppPage extends GetView<SearchInAppController> with CommonMixin {
                   margin: EdgeInsets.symmetric(horizontal: 10.w, vertical: 7.h),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.r),
-                    color: AppColors.grey100.withOpacity(0.6),
+                    color: AppColors.grey100.withValues(alpha: 0.6),
                     border: Border.all(width: 0.5, color: AppColors.grey100),
                   ),
                   child: Container(
@@ -423,7 +423,7 @@ class SearchInAppPage extends GetView<SearchInAppController> with CommonMixin {
                             },
                             child: Container(
                               height: 28.h,
-                              color: AppColors.grey100.withOpacity(0.6),
+                              color: AppColors.grey100.withValues(alpha: 0.6),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,

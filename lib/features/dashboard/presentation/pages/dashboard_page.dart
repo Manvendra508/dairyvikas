@@ -67,8 +67,8 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
   }
 
   _buildDashboardLoadingSkelaton() {
-    Color baseColor = AppColors.grey200.withOpacity(0.8);
-    Color highlightColor = AppColors.whiteColor.withOpacity(0.7);
+    Color baseColor = AppColors.grey200.withValues(alpha: 0.8);
+    Color highlightColor = AppColors.whiteColor.withValues(alpha: 0.7);
     return Shimmer.fromColors(
       baseColor: baseColor,
       highlightColor: highlightColor,
@@ -173,7 +173,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppColors.lightthemeColor.withOpacity(0.01),
+            AppColors.lightthemeColor.withValues(alpha: 0.01),
             AppColors.whiteColor,
           ],
           stops: [0.01, 0.17],
@@ -193,7 +193,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
               borderRaduis: 0.r,
               width: 1.sw,
 
-              containerColor: AppColors.grey100.withOpacity(0.8),
+              containerColor: AppColors.grey100.withValues(alpha: 0.8),
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 5.h),
                 child: Row(
@@ -247,7 +247,9 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                           borderRadius: BorderRadius.circular(30.r),
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.themeColor.withOpacity(0.2),
+                              color: AppColors.themeColor.withValues(
+                                alpha: 0.2,
+                              ),
                               blurRadius: 4,
                               offset: Offset(0, 1),
                             ),
@@ -324,7 +326,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
 
   _buildChooseStoryPhotowidget(BuildContext context) {
     return Container(
-      color: AppColors.themeColor.withOpacity(0.1),
+      color: AppColors.themeColor.withValues(alpha: 0.1),
       width: 1.sw,
 
       child: Column(
@@ -543,10 +545,12 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                     title: 'cancel',
                     buttonFontWeight: FontWeight.w500,
                     isLoading: false.obs,
-                    buttonBorderColor: AppColors.whiteColor.withOpacity(0.8),
+                    buttonBorderColor: AppColors.whiteColor.withValues(
+                      alpha: 0.8,
+                    ),
                     buttonBorderRaduids: 4.r,
                     buttonColor: AppColors.whiteColor,
-                    buttonTextColor: AppColors.grey400.withOpacity(0.8),
+                    buttonTextColor: AppColors.grey400.withValues(alpha: 0.8),
                   ),
                 ),
                 InkWell(

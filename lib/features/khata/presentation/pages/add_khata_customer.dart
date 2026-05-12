@@ -145,10 +145,12 @@ class AddKhataCustomer extends GetView<AddKhataCustomerController>
 
                   child: AppButton(
                     title: 'remove',
-                    buttonColor: AppColors.whiteColor.withOpacity(0.8),
-                    buttonBorderColor: AppColors.redColor.withOpacity(0.8),
+                    buttonColor: AppColors.whiteColor.withValues(alpha: 0.8),
+                    buttonBorderColor: AppColors.redColor.withValues(
+                      alpha: 0.8,
+                    ),
                     buttonFontWeight: FontWeight.w600,
-                    buttonTextColor: AppColors.redColor.withOpacity(0.8),
+                    buttonTextColor: AppColors.redColor.withValues(alpha: 0.8),
                     isLoading: _addKhataCustomerController.isDeleting,
                     shadowOpacity: 0.3,
                   ),
@@ -166,8 +168,8 @@ class AddKhataCustomer extends GetView<AddKhataCustomerController>
       width: 1.sw,
 
       shadowOpacity: 0.1,
-      containerColor: AppColors.themeColor.withOpacity(0.1),
-      bordercolor: AppColors.themeColor.withOpacity(0.8),
+      containerColor: AppColors.themeColor.withValues(alpha: 0.1),
+      bordercolor: AppColors.themeColor.withValues(alpha: 0.8),
       borderWidth: 0.2,
       child: Padding(
         padding: EdgeInsets.only(left: 8.w),
@@ -178,12 +180,12 @@ class AddKhataCustomer extends GetView<AddKhataCustomerController>
               height: 50.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30.r),
-                color: AppColors.themeColor.withOpacity(0.17),
+                color: AppColors.themeColor.withValues(alpha: 0.17),
               ),
               child: Center(
                 child: AppIcons.khata(
                   size: 23,
-                  color: AppColors.themeColor.withOpacity(0.8),
+                  color: AppColors.themeColor.withValues(alpha: 0.8),
                 ),
               ),
             ),

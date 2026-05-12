@@ -248,7 +248,7 @@ class AllInvoiceController extends GetxController with CommonMixin {
     } else if (key == invociePendingStatusKey) {
       return AppColors.warning;
     } else {
-      return AppColors.themeColor.withOpacity(0.8);
+      return AppColors.themeColor.withValues(alpha: 0.8);
     }
   }
 

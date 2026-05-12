@@ -150,7 +150,7 @@ class FoodDealersPage extends GetView<FoodDealersController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               enabledBorder: OutlineInputBorder(
@@ -158,14 +158,14 @@ class FoodDealersPage extends GetView<FoodDealersController> with CommonMixin {
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30.r),
                 borderSide: BorderSide(
                   width: 0.8,
-                  color: AppColors.themeColor.withOpacity(0.4),
+                  color: AppColors.themeColor.withValues(alpha: 0.4),
                 ),
               ),
 
@@ -223,7 +223,7 @@ class FoodDealersPage extends GetView<FoodDealersController> with CommonMixin {
                         height: 40.w,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: AppColors.themeColor.withOpacity(0.06),
+                          color: AppColors.themeColor.withValues(alpha: 0.06),
                           border: Border.all(
                             width: 0.6,
                             color: AppColors.themeColor,
@@ -305,7 +305,7 @@ class FoodDealersPage extends GetView<FoodDealersController> with CommonMixin {
                     height: 25.w,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8.r),
-                      color: AppColors.whiteColor.withOpacity(0.06),
+                      color: AppColors.whiteColor.withValues(alpha: 0.06),
                       border: Border.all(
                         width: 0.6,
                         color: AppColors.whiteColor,

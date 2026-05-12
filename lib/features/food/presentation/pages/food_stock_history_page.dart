@@ -155,7 +155,7 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
       width: 1.sw,
       height: 0.6.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.1),
+        color: AppColors.themeColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),
@@ -202,7 +202,7 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
                                       .currentDateRangeIndex
                                       .value ==
                                   index
-                              ? AppColors.themeColor.withOpacity(0.02)
+                              ? AppColors.themeColor.withValues(alpha: 0.02)
                               : AppColors.whiteColor,
                           border: Border.all(
                             width: 0.4,
@@ -310,7 +310,9 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
                               text: 'per'.trParams({
                                 'count': stockHistoryItem.unit.toUpperCase(),
                               }),
-                              textColor: AppColors.grey600.withOpacity(0.8),
+                              textColor: AppColors.grey600.withValues(
+                                alpha: 0.8,
+                              ),
                               fontSize: 9.5.sp,
                               fontWeight: FontWeight.w700,
                             ),
@@ -335,7 +337,9 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
                             children: [
                               TextWidget(
                                 text: 'total_qty',
-                                textColor: AppColors.grey400.withOpacity(0.8),
+                                textColor: AppColors.grey400.withValues(
+                                  alpha: 0.8,
+                                ),
                                 fontSize: 11.sp,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -377,7 +381,9 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
                               children: [
                                 TextWidget(
                                   text: 'buy_price',
-                                  textColor: AppColors.grey400.withOpacity(0.8),
+                                  textColor: AppColors.grey400.withValues(
+                                    alpha: 0.8,
+                                  ),
                                   fontSize: 11.sp,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -411,12 +417,12 @@ class FoodStockHistoryPage extends GetView<FoodStockHistoryController>
                   height: 125.h,
                   borderRaduis: 14.r,
                   bordercolor: AppColors.whiteColor,
-                  containerColor: AppColors.grey100.withOpacity(0.5),
-                  // containerColor: AppColors.blackColor.withOpacity(0.8),
+                  containerColor: AppColors.grey100.withValues(alpha: 0.5),
+                  // containerColor: AppColors.blackColor.withValues(alpha : 0.8),
                   child: Center(
                     child: TextWidget(
                       text: 'out_of_stock_lower',
-                      textColor: AppColors.redColor.withOpacity(0.8),
+                      textColor: AppColors.redColor.withValues(alpha: 0.8),
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w600,
                     ),

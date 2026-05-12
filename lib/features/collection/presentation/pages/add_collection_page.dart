@@ -83,8 +83,8 @@ class AddNewCollection extends GetView<AddNewCollectionController>
         buttonFontSize: 13.sp,
         shadowOpacity: 0.6,
         buttonFontWeight: FontWeight.w600,
-        buttonBorderColor: AppColors.redColor.withOpacity(0.8),
-        buttonColor: AppColors.redColor.withOpacity(0.8),
+        buttonBorderColor: AppColors.redColor.withValues(alpha: 0.8),
+        buttonColor: AppColors.redColor.withValues(alpha: 0.8),
         isLoading: _addNewCollectionController.isDeleting,
       ),
     );
@@ -171,7 +171,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
                                   _addNewCollectionController
                                       .isSupplierInActive
                                       .value
-                                  ? AppColors.redColor.withOpacity(0.8)
+                                  ? AppColors.redColor.withValues(alpha: 0.8)
                                   : AppColors.themeColor,
                             ),
                           ),
@@ -201,8 +201,8 @@ class AddNewCollection extends GetView<AddNewCollectionController>
                                     height: 20.h,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(5.r),
-                                      color: AppColors.themeColor.withOpacity(
-                                        0.1,
+                                      color: AppColors.themeColor.withValues(
+                                        alpha: 0.1,
                                       ),
                                     ),
                                     child: Center(
@@ -322,7 +322,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
                         }),
                         fontSize: 10.sp,
                         fontWeight: FontWeight.w500,
-                        textColor: AppColors.redColor.withOpacity(0.8),
+                        textColor: AppColors.redColor.withValues(alpha: 0.8),
                       ),
                     ),
                   ),
@@ -577,7 +577,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
           ),
           decoration: BoxDecoration(
             color: isActive.value
-                ? AppColors.themeColor.withOpacity(0.7)
+                ? AppColors.themeColor.withValues(alpha: 0.7)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(8.r),
 
@@ -719,7 +719,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
                           height: 22.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5.r),
-                            color: AppColors.themeColor.withOpacity(0.4),
+                            color: AppColors.themeColor.withValues(alpha: 0.4),
                           ),
                           child: Center(
                             child: TextFormField(
@@ -798,7 +798,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
                   height: 22.h,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.r),
-                    color: AppColors.grey300.withOpacity(0.4),
+                    color: AppColors.grey300.withValues(alpha: 0.4),
                   ),
 
                   child: Center(
@@ -992,7 +992,7 @@ class AddNewCollection extends GetView<AddNewCollectionController>
       width: 1.sw,
       height: 0.85.sh,
       decoration: BoxDecoration(
-        color: AppColors.themeColor.withOpacity(0.07),
+        color: AppColors.themeColor.withValues(alpha: 0.07),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(12.r),
           topRight: Radius.circular(12.r),

@@ -31,7 +31,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: true,
-        backgroundColor: AppColors.whiteColor.withOpacity(0.98),
+        backgroundColor: AppColors.whiteColor.withValues(alpha: 0.98),
         body: Padding(
           padding: EdgeInsets.symmetric(vertical: 10.h),
           child: Obx(
@@ -138,8 +138,8 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
       width: 1.sw / 2.2,
       height: 80.h,
       shadowOpacity: 0.1,
-      containerColor: color.withOpacity(0.1),
-      bordercolor: color.withOpacity(0.8),
+      containerColor: color.withValues(alpha: 0.1),
+      bordercolor: color.withValues(alpha: 0.8),
       borderWidth: 0.2,
       child: Padding(
         padding: EdgeInsets.only(left: 8.w),
@@ -222,7 +222,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
                     borderRadius: BorderRadius.circular(8.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.grey100.withOpacity(0.4),
+                      color: AppColors.grey100.withValues(alpha: 0.4),
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
@@ -230,14 +230,14 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
                     borderRadius: BorderRadius.circular(8.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.grey200.withOpacity(0.4),
+                      color: AppColors.grey200.withValues(alpha: 0.4),
                     ),
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.r),
                     borderSide: BorderSide(
                       width: 0.8,
-                      color: AppColors.grey200.withOpacity(0.4),
+                      color: AppColors.grey200.withValues(alpha: 0.4),
                     ),
                   ),
 
@@ -296,7 +296,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
                     height: 40.w,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.themeColor.withOpacity(0.06),
+                      color: AppColors.themeColor.withValues(alpha: 0.06),
                       border: Border.all(
                         width: 0.6,
                         color: AppColors.themeColor,
@@ -353,7 +353,7 @@ class AllKhataCustomers extends GetView<AllKhataCustomersController>
                         fontWeight: FontWeight.w600,
                         fontSize: 15.sp,
                         textColor: user.balance.isNegative
-                            ? AppColors.redColor.withOpacity(0.8)
+                            ? AppColors.redColor.withValues(alpha: 0.8)
                             : AppColors.themeColor,
                       ),
                       Gap.verticalGap(1),

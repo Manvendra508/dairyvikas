@@ -33,7 +33,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: true,
-        backgroundColor: AppColors.whiteColor.withOpacity(0.98),
+        backgroundColor: AppColors.whiteColor.withValues(alpha: 0.98),
         bottomNavigationBar: _bottomBarButtons(context),
         body: Padding(
           padding: EdgeInsets.symmetric(vertical: 10.h),
@@ -108,8 +108,10 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                                     _khataEntriesController
                                         .totalAmount
                                         .isNegative
-                                    ? AppColors.themeColor.withOpacity(0.1)
-                                    : AppColors.redColor.withOpacity(0.1),
+                                    ? AppColors.themeColor.withValues(
+                                        alpha: 0.1,
+                                      )
+                                    : AppColors.redColor.withValues(alpha: 0.1),
                               ),
                               child: Center(
                                 child: Padding(
@@ -223,7 +225,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                 context,
                 entry.type == 'credit'
                     ? AppColors.themeColor
-                    : AppColors.redColor.withOpacity(0.8),
+                    : AppColors.redColor.withValues(alpha: 0.8),
                 entry,
               ),
             );
@@ -356,12 +358,12 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   _buildButton(
-                    AppColors.redColor.withOpacity(0.8),
+                    AppColors.redColor.withValues(alpha: 0.8),
                     false,
                     context,
                   ),
                   _buildButton(
-                    AppColors.themeColor.withOpacity(0.8),
+                    AppColors.themeColor.withValues(alpha: 0.8),
                     true,
                     context,
                   ),
@@ -383,7 +385,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
       child: CommonContainer(
         width: 150.w,
         height: 38.h,
-        containerColor: color.withOpacity(0.8),
+        containerColor: color.withValues(alpha: 0.8),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -428,7 +430,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                   text: isAdd ? 'you_are_receving' : 'you_are_paying',
                   fontSize: 16.sp,
                   fontWeight: FontWeight.w600,
-                  textColor: color.withOpacity(0.8),
+                  textColor: color.withValues(alpha: 0.8),
                 ),
                 CrossButton(),
               ],
@@ -466,10 +468,10 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                 //     height: 32.h,
                 //     decoration: BoxDecoration(
                 //       borderRadius: BorderRadius.circular(8.r),
-                //       color: color.withOpacity(0.1),
+                //       color: color.withValues(alpha : 0.1),
                 //       border: Border.all(
                 //         width: 0.5,
-                //         color: color.withOpacity(0.7),
+                //         color: color.withValues(alpha : 0.7),
                 //       ),
                 //     ),
                 //     child: Padding(
@@ -507,7 +509,7 @@ class KhataEntriesPage extends GetView<KhataEntriesController>
                     buttonBorderColor: color,
                     title: entry == null ? 'add' : 'update',
                     isLoading: false.obs,
-                    buttonColor: color.withOpacity(0.8),
+                    buttonColor: color.withValues(alpha: 0.8),
                   ),
                 ),
               ],

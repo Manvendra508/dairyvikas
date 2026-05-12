@@ -180,7 +180,7 @@ class AddMilkBuyerPage extends GetView<AddMilkBuyerController>
     return Container(
       width: 1.sw,
       decoration: BoxDecoration(
-        color: AppColors.grey100.withOpacity(0.5),
+        color: AppColors.grey100.withValues(alpha: 0.5),
         borderRadius: BorderRadius.circular(12.r),
         border: Border.all(width: 0.8, color: AppColors.lightBorder),
       ),
@@ -321,7 +321,7 @@ class AddMilkBuyerPage extends GetView<AddMilkBuyerController>
                 _addMilkBuyerController.milktypIds.contains(
                   _addMilkBuyerController.milkTypes[index]['id'],
                 )
-                ? AppColors.themeColor.withOpacity(0.7)
+                ? AppColors.themeColor.withValues(alpha: 0.7)
                 : AppColors.whiteColor,
             borderRadius: BorderRadius.circular(8.r),
 

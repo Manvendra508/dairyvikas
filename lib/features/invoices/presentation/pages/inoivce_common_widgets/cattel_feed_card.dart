@@ -72,7 +72,7 @@ class CattelFeedCard extends StatelessWidget {
           Container(
             height: 30.h,
             decoration: BoxDecoration(
-              color: AppColors.grey100.withOpacity(0.6),
+              color: AppColors.grey100.withValues(alpha: 0.6),
               border: Border(
                 bottom: BorderSide(width: 0.7, color: AppColors.grey200),
               ),
@@ -122,7 +122,7 @@ class CattelFeedCard extends StatelessWidget {
                 margin: EdgeInsets.only(left: 2.w, right: 4.w),
                 height: 30.h,
                 decoration: BoxDecoration(
-                  color: AppColors.whiteColor.withOpacity(0.6),
+                  color: AppColors.whiteColor.withValues(alpha: 0.6),
                   border: Border(
                     bottom: BorderSide(width: 0.7, color: AppColors.grey200),
                   ),
@@ -202,7 +202,7 @@ class CattelFeedCard extends StatelessWidget {
     return Container(
       height: 30.h,
       decoration: BoxDecoration(
-        color: AppColors.blue.withOpacity(0.08),
+        color: AppColors.blue.withValues(alpha: 0.08),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(8.r),
           bottomRight: Radius.circular(8.r),
