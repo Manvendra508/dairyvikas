@@ -19,6 +19,9 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
+      - name: Fix flutter SDK folder permission
+        run: git config --global --add safe.directory /tmp/flutter/--
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
