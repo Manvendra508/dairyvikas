@@ -73,7 +73,7 @@ import 'package:DairyVikas/features/profile_and_settings/presentation/controller
 import 'package:DairyVikas/features/profile_and_settings/presentation/controllers/profile_controller.dart';
 import 'package:DairyVikas/features/profile_and_settings/presentation/controllers/refer_and_earn_controller.dart';
 import 'package:DairyVikas/features/profile_and_settings/presentation/pages/app_setting_page.dart'
-    show AppSettingPage, DairySettingPage;
+    show AppSettingPage;
 import 'package:DairyVikas/features/profile_and_settings/presentation/pages/profile_page.dart';
 import 'package:DairyVikas/features/profile_and_settings/presentation/pages/refer_and_earn.dart';
 import 'package:DairyVikas/features/rate_cart/presentation/controllers/add_rate_chart_controller.dart';
