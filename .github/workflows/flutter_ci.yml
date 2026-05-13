@@ -27,7 +27,7 @@ jobs:
         with:
           channel: stable
           flutter-version: 3.41.x
-          cache: false
+          cache: true
 
       - name: Check Flutter Version
         run: flutter --version
@@ -57,3 +57,9 @@ jobs:
 
       - name: Build AppBundle
         run: flutter build appbundle --release
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-aab
+          path: build/app/outputs/bundle/release/app-release.aab
