@@ -71,4 +71,4 @@ jobs:
           packageName: com.dairysathi.app # Replace with your actual package name
           releaseFiles: build/app/outputs/bundle/release/app-release.aab
           tracks: internal # Options: internal, alpha, beta, production
-          status: completed
+          status: draft
