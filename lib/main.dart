@@ -24,7 +24,6 @@ Future<void> main() async {
 
     return true;
   };
-  //
 
   final NetworkService networkService = NetworkService();
 
