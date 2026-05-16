@@ -6,7 +6,7 @@ const Map<String, String> enUS = {
   "not_registered_yet": "Not registered yet?",
   "register_now": "Register Now",
   "choose_lang": "Choose Language",
-  "choose_lang_msg": "Select you desired langauge to use!",
+  "choose_lang_msg": "Select your desired langauge to use!",
   "personal_detail": "Personal Details",
   "please_select_time_also": "Please select time  also",
   "future_date/time_not_allowed": "Future date/time not allowed",

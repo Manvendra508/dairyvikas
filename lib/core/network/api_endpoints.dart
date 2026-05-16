@@ -17,7 +17,7 @@ class ApiEndpoints {
   // common routes api
   static String getDairySettingsdata = '$baseUrl/common/getFields';
   static String getDateRange = '$baseUrl/common/getDateRange';
-  static String checkAppUpdate = '$baseUrl/common/checkForUpdate';
+  static String checkAppUpdate = '$baseUrl/common/getAppVersion';
 
   // auth apis
   static String refreshToken = '$baseUrl/auth/vendorRefresh';

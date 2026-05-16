@@ -23,13 +23,24 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   bool hasUpdate = false;
+  int currentBuildNumber = 0;
 
   @override
   void initState() {
     super.initState();
 
     _firstMethod();
-    if (!hasUpdate) {
+  }
+
+  _firstMethod() async {
+    await getAppVersion();
+    await checkForUpdate();
+
+    if (hasUpdate) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        showDialogForAppUpdate(context);
+      });
+    } else {
       Future.delayed(const Duration(seconds: 2), () async {
         final isLoggedIn = await AuthService.isLoggedIn();
         final hasDairyDetailsSaved = await AuthService.isDairyDetailsSaved();
@@ -45,17 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
         }
       });
     }
-  }
-
-  _firstMethod() async {
-    await getAppVersion();
-    await checkForUpdate();
-
-    if (hasUpdate) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        showDialogForAppUpdate(context);
-      });
-    }
+    setState(() {});
   }
 
   Future checkForUpdate() async {
@@ -74,7 +75,10 @@ class _SplashScreenState extends State<SplashScreen> {
       if (response.statusCode == 200) {
         final apiResponse = jsonDecode(response.body);
         if (apiResponse['success']) {
-          hasUpdate = apiResponse['data']['update_required'];
+          int latestBuildNumber = apiResponse['version']['no'];
+          if (currentBuildNumber < latestBuildNumber) {
+            hasUpdate = true;
+          }
         } else {
           hasUpdate = false;
         }
@@ -90,19 +94,24 @@ class _SplashScreenState extends State<SplashScreen> {
   getAppVersion() async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     AppState.appVersion = packageInfo.version;
+    currentBuildNumber = int.parse(packageInfo.buildNumber);
   }
 
   showDialogForAppUpdate(BuildContext context) {
     showDialog<void>(
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
-        return AlertDialog(
-          contentPadding: EdgeInsets.zero,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadiusGeometry.circular(25.r),
-          ),
+        return WillPopScope(
+          onWillPop: () async => false, // Prevent back button
+          child: AlertDialog(
+            contentPadding: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadiusGeometry.circular(25.r),
+            ),
 
-          content: AppUpdateWidget(),
+            content: AppUpdateWidget(callback: () => launchStoreUrl()),
+          ),
         );
       },
     );
@@ -112,7 +121,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Uri url;
     if (Platform.isAndroid) {
       url = Uri.parse(
-        'https://play.google.com/store/apps/details?id=com.dairyvikas.app',
+        'https://play.google.com/store/apps/details?id=com.dairysathi.app',
       );
     } else {
       throw 'Unsupported platform';
@@ -132,17 +141,22 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: AppColors.themeColor,
-        width: 1.sw,
-        height: 1.sh,
-        child: Center(
-          child: TextWidget(
-            text: 'DairyVikas',
-            fontSize: 30,
-            textColor: AppColors.whiteColor,
-            fontWeight: FontWeight.w600,
+    return WillPopScope(
+      onWillPop: () async {
+        return false;
+      },
+      child: Scaffold(
+        body: Container(
+          color: AppColors.themeColor,
+          width: 1.sw,
+          height: 1.sh,
+          child: Center(
+            child: TextWidget(
+              text: 'DairyVikas',
+              fontSize: 30,
+              textColor: AppColors.whiteColor,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
       ),

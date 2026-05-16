@@ -2,14 +2,14 @@ import 'package:DairyVikas/app/theme/app_colors.dart';
 import 'package:DairyVikas/common/common_widget/app_button.dart';
 import 'package:DairyVikas/common/common_widget/text_widget.dart';
 import 'package:DairyVikas/core/utils/app_icons.dart';
-import 'package:DairyVikas/core/utils/app_navigation.dart';
 import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class AppUpdateWidget extends StatelessWidget {
-  const AppUpdateWidget({super.key});
+  final VoidCallback callback;
+  const AppUpdateWidget({super.key, required this.callback});
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,8 @@ class AppUpdateWidget extends StatelessWidget {
           Gap.verticalGap(20),
           InkWell(
             onTap: () {
-              AppNavigation.goBack();
+              // AppNavigation.goBack();
+              callback();
             },
             child: AppButton(
               margin: EdgeInsets.symmetric(horizontal: 25.w),

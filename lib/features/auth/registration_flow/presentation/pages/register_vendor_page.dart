@@ -11,6 +11,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../controllers/register_vendor_controller.dart';
 
@@ -247,30 +248,35 @@ class RegisterVendorPage extends GetView<RegisterVendorController> {
               Gap.horizentalGap(2),
 
               Flexible(
-                child: RichText(
-                  text: TextSpan(
-                    style: TextStyle(
-                      fontSize: 13.sp,
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.grey500,
+                child: InkWell(
+                  onTap: () => launchUrl(
+                    Uri.parse('https://krishidhyan.com/terms-conditions.html'),
+                  ),
+                  child: RichText(
+                    text: TextSpan(
+                      style: TextStyle(
+                        fontSize: 13.sp,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.grey500,
+                      ),
+                      children: [
+                        TextSpan(
+                          text: 'i_have_agree'.tr,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'terms_and_conditions'.tr,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 13.sp,
+                            fontWeight: FontWeight.w500,
+                            color: AppColors.themeColor,
+                          ),
+                        ),
+                      ],
                     ),
-                    children: [
-                      TextSpan(
-                        text: 'i_have_agree'.tr,
-                        style: GoogleFonts.montserrat(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      TextSpan(
-                        text: 'terms_and_conditions'.tr,
-                        style: GoogleFonts.montserrat(
-                          fontSize: 13.sp,
-                          fontWeight: FontWeight.w500,
-                          color: AppColors.themeColor,
-                        ),
-                      ),
-                    ],
                   ),
                 ),
               ),
