@@ -136,6 +136,7 @@ class IncreaseFatClrChartScreenState
       null,
       null,
       widget.isCrlOnly ? [clrSteps] : [fatSteps, clrSteps],
+      context,
     );
   }
 

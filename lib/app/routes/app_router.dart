@@ -3,6 +3,7 @@
 import 'package:DairyVikas/features/auth/login/presentation/controllers/forgot_password_controller.dart';
 import 'package:DairyVikas/features/auth/login/presentation/pages/forgot_password_page.dart';
 import 'package:DairyVikas/features/auth/login/presentation/pages/login_page.dart';
+import 'package:DairyVikas/features/auth/registration_flow/presentation/controllers/dairy_center_details_controller.dart';
 import 'package:DairyVikas/features/auth/registration_flow/presentation/pages/dairy_center_details_page.dart';
 import 'package:DairyVikas/features/auth/registration_flow/presentation/pages/dairy_center_settings.dart';
 import 'package:DairyVikas/features/auth/registration_flow/presentation/pages/otp_verify_page.dart';
@@ -226,6 +227,11 @@ class AppRouter {
       ),
       GoRoute(
         path: RouteNames.dairyCenterDetails,
+        onExit: (context, state) {
+          Get.delete<DairyCenterDetailsController>();
+
+          return true;
+        },
         pageBuilder: (context, state) {
           final data = state.extra as Map<String, dynamic>?;
           final isFromDashboard = data?["isFromDashboard"] ?? false;
@@ -358,9 +364,13 @@ class AppRouter {
         pageBuilder: (context, state) {
           final data = state.extra as Map<String, dynamic>?;
           final rateChart = data?["rate_chart"] as RateChartModel;
+          final rateChartName = data?["rate_chart_name"] ?? '';
           return CustomTransitionPage(
             key: state.pageKey,
-            child: RateChartDetailsPage(rateChart: rateChart),
+            child: RateChartDetailsPage(
+              rateChart: rateChart,
+              rateChartName: rateChartName,
+            ),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
                   const begin = Offset(1.0, 0.0);

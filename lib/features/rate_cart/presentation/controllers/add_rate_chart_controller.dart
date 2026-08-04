@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:convert';
 
 import 'package:DairyVikas/common/common_mixin.dart';
@@ -18,12 +20,14 @@ import 'package:DairyVikas/features/rate_cart/presentation/pages/rate_charts/fat
 import 'package:dio/dio.dart' as fd;
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/local_datasources/local_storage_service.dart';
 import '../../domain/entities/bonus_penality_step_entity.dart';
 import '../../domain/entities/rate_step_entity.dart';
 import '../../domain/entities/total_solid_step_entity.dart';
+import '../pages/rate_chart_common_widgets/ratechart_add_confimration.dart';
 import '../pages/rate_charts/fat_clr_inc_per_fat_clr_point.dart';
 import '../pages/rate_charts/fat_clr_rate_per_kg.dart';
 import '../pages/rate_charts/fat_clr_total_solid.dart';
@@ -422,6 +426,7 @@ class AddRateChartController extends GetxController with CommonMixin {
     List<BonusPenaltyStep>? fatBonuses,
     List<BonusPenaltyStep>? snfBonuses,
     List stepsList,
+    BuildContext context,
   ) {
     rateChartValues = matrix;
     fatValues = fatvalues;
@@ -436,7 +441,7 @@ class AddRateChartController extends GetxController with CommonMixin {
 
     stepsRowData = calculateSteps(stepsList);
 
-    addOrUpdateRateChart();
+    addOrUpdateRateChart(context);
   }
 
   Future chooseExcelFile() async {
@@ -446,14 +451,14 @@ class AddRateChartController extends GetxController with CommonMixin {
     selectedChartExcelFile.value = '${excelFile!.name}.${excelFile!.extension}';
   }
 
-  addChart() async {
+  addChart(BuildContext context) async {
     if (selectedRateChartFormate.id == '4') {
       //excel case
 
       if (selectedChartExcelFile.value.isEmpty && !AppState.isRateChartEdit) {
         return;
       }
-      await addOrUpdateRateChart();
+      await addOrUpdateRateChart(context);
     } else {
       if (selectedRateChartType.id == '3' || selectedRateChartType.id == '1') {
         checkForTypeFatSnfAndFatOnly();
@@ -463,7 +468,7 @@ class AddRateChartController extends GetxController with CommonMixin {
         checkForTypeFatClrAndClrOnly();
         // rate type 5 is for FAT + CLR + Auto SNF
       } else if (selectedRateChartType.id == '6') {
-        await addOrUpdateRateChart();
+        await addOrUpdateRateChart(context);
       }
     }
   }
@@ -715,7 +720,9 @@ class AddRateChartController extends GetxController with CommonMixin {
     return stepData;
   }
 
-  Future<Map<String, dynamic>> rateChartDataToSend() async {
+  Future<Map<String, dynamic>> rateChartDataToSend({
+    bool? assignmentConfirmation,
+  }) async {
     final List<Map<String, dynamic>> rateRows = [];
 
     final String dairyId =
@@ -786,7 +793,8 @@ class AddRateChartController extends GetxController with CommonMixin {
       "chartId": AppState.isRateChartEdit
           ? AppState.currentRateChartForDetailsPage.id
           : '',
-      "dairyId": int.parse(dairyId),
+      "dairy_id": int.parse(dairyId),
+      "assignmentConfirmation": assignmentConfirmation,
       // "isenabled": "1",
       "rateRows": rateRows,
       "steps":
@@ -796,19 +804,24 @@ class AddRateChartController extends GetxController with CommonMixin {
     };
   }
 
-  Future<void> addOrUpdateRateChart() async {
+  Future<void> addOrUpdateRateChart(
+    BuildContext context, {
+    bool? assignmentConfirmation,
+  }) async {
     try {
       if (!validateChartData() || isSavingChart.value) return;
       isSavingChart.value = true;
 
-      Map<String, dynamic> chartData = await rateChartDataToSend();
+      Map<String, dynamic> chartData = await rateChartDataToSend(
+        assignmentConfirmation: assignmentConfirmation,
+      );
 
       if (AppState.isRateChartEdit) {
         Map response = await updateRateChartUsecase(chartData);
-        _handleSuccessOrError(response);
+        _handleSuccessOrError(response, context);
       } else {
         Map response = await addRatechartUsecase(chartData);
-        _handleSuccessOrError(response);
+        _handleSuccessOrError(response, context);
       }
     } catch (e) {
       String errorMessage = AppExceptionHandler.handleError(e);
@@ -819,15 +832,38 @@ class AddRateChartController extends GetxController with CommonMixin {
     }
   }
 
-  _handleSuccessOrError(Map response) async {
+  _handleSuccessOrError(Map response, BuildContext context) async {
     if (response['success']) {
       final allRatechartController = Get.find<AllRateChartsController>();
       await allRatechartController.getAllRateCharts();
       AppNavigation.goBack();
       showAppToastMessage(response['message'], false);
     } else {
-      showAppToastMessage(response['message'], true);
+      if (response['type'] == 'CONFIRMATION_REQUIRED') {
+        showAssignRateChartOption(context, 'assign_rate_chart_confirmation');
+      } else {
+        showAppToastMessage(response['message'], true);
+      }
     }
+  }
+
+  showAssignRateChartOption(BuildContext context, String message) {
+    showMyBottomSheet(
+      context,
+      RatechartAddConfimration(
+        height: 170.h,
+        message: message,
+        title: 'warning',
+        callback: () async {
+          AppNavigation.goBack();
+          await addOrUpdateRateChart(context, assignmentConfirmation: true);
+        },
+        callback1: () async {
+          AppNavigation.goBack();
+          await addOrUpdateRateChart(context, assignmentConfirmation: false);
+        },
+      ),
+    );
   }
 
   Future<void> fetchDairySettingsData() async {

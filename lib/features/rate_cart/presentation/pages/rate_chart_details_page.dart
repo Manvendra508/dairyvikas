@@ -20,7 +20,12 @@ import '../controllers/rate_chart_details_controller.dart';
 class RateChartDetailsPage extends GetView<RateChartDetailsController>
     with CommonMixin {
   final RateChartModel rateChart;
-  RateChartDetailsPage({super.key, required this.rateChart});
+  final String rateChartName;
+  RateChartDetailsPage({
+    super.key,
+    required this.rateChart,
+    required this.rateChartName,
+  });
 
   final RateChartDetailsController _rateChartDetailsController =
       Get.find<RateChartDetailsController>();
@@ -43,7 +48,10 @@ class RateChartDetailsPage extends GetView<RateChartDetailsController>
                   Gap.verticalGap(7.h),
 
                   DairyVikasAppBar(
-                    title: 'rate_charts',
+                    title: AppState
+                        .currentRateChartForDetailsPage
+                        .name
+                        .capitalize!,
                     dairyName: AppState.dairyName.capitalize!,
                     trailingWidget:
                         !AppState.currentRateChartForDetailsPage.isEnabled

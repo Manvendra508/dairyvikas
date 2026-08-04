@@ -78,6 +78,7 @@ class TotalSolidChartFatSnfPageState extends State<TotalSolidChartFatSnfPage>
       null,
       null,
       [steps],
+      context,
     );
   }
 

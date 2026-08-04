@@ -167,6 +167,7 @@ class RateChartScreenState extends State<FatSnfRatePerKg> with CommonMixin {
       fatBonus,
       snfBonus,
       widget.isFatOnly ? [fatSteps] : [fatSteps, snfSteps],
+      context,
     );
   }
 

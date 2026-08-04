@@ -64,7 +64,7 @@ class AddRateChartPage extends GetView<AddRateChartController>
                             ? 'edit_rate_chart'
                             : 'add_rate_chart',
                         dairyName: AppState.dairyName.capitalize!,
-                        trailingWidget: _buildAppBarButton(),
+                        trailingWidget: _buildAppBarButton(context),
                       ),
 
                       Gap.verticalGap(6),
@@ -158,9 +158,9 @@ class AddRateChartPage extends GetView<AddRateChartController>
     );
   }
 
-  _buildAppBarButton() {
+  _buildAppBarButton(BuildContext context) {
     return InkWell(
-      onTap: () => _addrateChartController.addChart(),
+      onTap: () => _addrateChartController.addChart(context),
       child: Obx(
         () => AppButton(
           buttonBorderRaduids: 20.r,

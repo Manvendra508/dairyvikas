@@ -60,8 +60,14 @@ class AppNavigation {
     _router.push(RouteNames.allRateCharts);
   }
 
-  static void goToRateChartDetailsPage(RateChartModel rateChart) {
-    _router.push(RouteNames.rateChartDetails, extra: {"rate_chart": rateChart});
+  static void goToRateChartDetailsPage(
+    RateChartModel rateChart,
+    String rateChartName,
+  ) {
+    _router.push(
+      RouteNames.rateChartDetails,
+      extra: {"rate_chart": rateChart, "rate_chart_name": rateChartName},
+    );
   }
 
   static void goToEditRateChartPage(RateChartModel rateChart) {

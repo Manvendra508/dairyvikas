@@ -108,6 +108,11 @@ class LoginController extends GetxController with CommonMixin {
           vendorData.value!.vendorModel.dairyId,
         );
 
+        if (vendorData.value!.vendorModel.dairyId != '0') {
+          // 0 is set in vendor model
+          await SharedPrefsService.instance.saveIsDairyAdded(true);
+        }
+
         await SharedPrefsService.instance.saveVendor(
           vendorData.value!.vendorModel,
         );

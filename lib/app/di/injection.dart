@@ -551,7 +551,11 @@ class Injection {
       fenix: true,
     );
     Get.lazyPut<DairyCenterDetailsController>(
-      () => DairyCenterDetailsController(),
+      () => DairyCenterDetailsController(
+        Get.find<AddDairyDetailsUsecase>(),
+        Get.find<GetDairySettingDataUsecase>(),
+      ),
+
       fenix: true,
     );
     Get.lazyPut<DairyCenterSettingsController>(

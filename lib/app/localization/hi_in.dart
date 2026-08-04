@@ -157,6 +157,8 @@ const Map<String, String> hiIN = {
   "select_chart_type_format":
       "अपना नया चार्ट बनाने के लिए\nचार्ट का प्रकार और फ़ॉर्मेट चुनें।",
   "add_rate_chart": "रेट चार्ट जोड़ें",
+  "assign_rate_chart_confirmation":
+      "इस डेयरी के लिए उसी दूध के प्रकार के लिए पहले से एक रेट चार्ट सौंपा गया है। क्या आप इसे बदलना चाहते हैं?",
   "save": "सहेजें",
   "select_formate": "फ़ॉर्मेट चुनें",
   "select_chart_type": "चार्ट का प्रकार चुनें",
@@ -199,11 +201,12 @@ const Map<String, String> hiIN = {
   "inactive": "निष्क्रिय",
   "all": "सभी",
   "active": "सक्रिय",
-  "assigned": "सौंपा गया",
+  "assigned": "सौंपा गया", "replace_chart": "चार्ट बदलें",
   "morning": "सुबह",
   "evening": "शाम",
   "morning_evening": "सुबह + शाम",
   "yes": "हाँ",
+  "no": "नहीं",
   "cancel": "रद्द करें",
   "cow_buffalo": "गाय + भैंस",
   "buffalo": "भैंस",
@@ -460,6 +463,7 @@ const Map<String, String> hiIN = {
   "user": "उपयोगकर्ता: ",
   "status_dynamic": "स्थिति: ",
   "paid": "भुगतान किया गया",
+  "mark_unpaid": "भुगतान नहीं",
   "pending": "लंबित",
   "amount_dynamic": "राशि: @amount",
   "mark_paid": "भुगतान चिह्नित करें",
@@ -523,6 +527,7 @@ const Map<String, String> hiIN = {
   // Subscripiton plan strings
   "subscriptions": "सदस्यता योजनाएं",
   "choose_plan": "अपनी सदस्यता चुनें",
+  "free_trial_plan": "मुफ्त ट्रायल सदस्यता",
   "choose_plan_msg":
       "अपनी पसंदीदा सदस्यता चुनें और डेयरी साथी के साथ अपने व्यवसाय को बढ़ाएं",
   "no_plans_found": "कोई सदस्यता नहीं मिली!",

@@ -9,6 +9,7 @@ import 'package:DairyVikas/core/utils/app_navigation.dart';
 import 'package:DairyVikas/core/utils/assets_paths.dart';
 import 'package:DairyVikas/core/utils/gap.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pos_printer_platform_image_3/flutter_pos_printer_platform_image_3.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -97,10 +98,10 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
 
                       child: ListView.builder(
                         physics: BouncingScrollPhysics(),
-                        itemCount: _scanDevicesController.deivces.length,
+                        itemCount: _scanDevicesController.printers.length,
                         itemBuilder: (context, index) {
                           return _buildScannedDeviceWidget(
-                            _scanDevicesController.deivces[index],
+                            _scanDevicesController.printers[index],
                           );
                         },
                       ),
@@ -115,7 +116,7 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
     );
   }
 
-  _buildScannedDeviceWidget(String name) {
+  _buildScannedDeviceWidget(PrinterDevice printer) {
     return Stack(
       children: [
         CommonContainer(
@@ -153,7 +154,7 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
                     children: [
                       TextWidget(
                         maxline: 1,
-                        text: name,
+                        text: printer.name,
                         fontSize: 12.5.sp,
                         fontWeight: FontWeight.w600,
                         textColor: AppColors.grey800,
@@ -175,14 +176,34 @@ class ScanDevices extends GetView<ScanDevicesController> with CommonMixin {
         Positioned(
           bottom: 12,
           right: 20,
-          child: AppButton(
-            buttonWidth: 90.w,
-            buttonHeight: 20.h,
-            buttonBorderRaduids: 5.r,
-            buttonFontSize: 12.sp,
-            buttonFontWeight: FontWeight.w600,
-            title: 'connect',
-            isLoading: false.obs,
+          child: InkWell(
+            onTap: () => _scanDevicesController.connectPrinter(printer),
+            child: AppButton(
+              buttonWidth: 90.w,
+              buttonHeight: 20.h,
+              buttonBorderRaduids: 5.r,
+              buttonFontSize: 12.sp,
+              buttonFontWeight: FontWeight.w600,
+              title: 'connect',
+              isLoading: false.obs,
+            ),
+          ),
+        ),
+
+        Positioned(
+          bottom: 12,
+          right: 130,
+          child: InkWell(
+            onTap: () => _scanDevicesController.printReceipt(),
+            child: AppButton(
+              buttonWidth: 90.w,
+              buttonHeight: 20.h,
+              buttonBorderRaduids: 5.r,
+              buttonFontSize: 12.sp,
+              buttonFontWeight: FontWeight.w600,
+              title: 'print',
+              isLoading: false.obs,
+            ),
           ),
         ),
       ],

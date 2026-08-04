@@ -124,6 +124,7 @@ class IncreaseFatSnfChartScreenPerFatSnfPointState
       null,
       null,
       widget.isFatOnly ? [fatSteps] : [fatSteps, snfSteps],
+      context,
     );
   }
 

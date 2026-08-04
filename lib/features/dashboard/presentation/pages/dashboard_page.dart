@@ -55,7 +55,7 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
               child: Visibility(
                 visible: !_dashboardController.hasError.value,
                 replacement: RetryWidget(
-                  onRetry: () => _dashboardController.fetchDashBoardData(),
+                  onRetry: () => _dashboardController.firstMethod(),
                 ),
                 child: _buildDashboardBody(context),
               ),
@@ -211,9 +211,8 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                       fontWeight: FontWeight.w600,
                     ),
                     InkWell(
-                      onTap: () => AppNavigation.goToSubscriptionPlanPage(),
-
-                      // onTap: () => AppNavigation.goToScanDevicesPage(),
+                      // onTap: () => AppNavigation.goToSubscriptionPlanPage(),
+                      onTap: () => AppNavigation.goToScanDevicesPage(),
                       // child: CommonContainer(
                       //   width: 120.w,
                       //   height: 30.h,
@@ -672,14 +671,17 @@ class DashboardPage extends GetView<DashboardController> with CommonMixin {
                     children: [
                       AppIcons.location(size: 11),
                       Gap.horizentalGap(3),
-                      TextWidget(
-                        text:
-                            '${_dashboardController.vendorDistrict}, ${_dashboardController.vendorState}',
-                        fontSize:
-                            _dashboardController.vendorDistrict.length > 10
-                            ? 10.sp
-                            : 11.sp,
-                        fontWeight: FontWeight.w500,
+                      SizedBox(
+                        width: 0.46.sw,
+                        child: TextWidget(
+                          text:
+                              '${_dashboardController.vendorDistrict}, ${_dashboardController.vendorState}',
+                          fontSize:
+                              _dashboardController.vendorDistrict.length > 10
+                              ? 10.sp
+                              : 11.sp,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ],
                   ),

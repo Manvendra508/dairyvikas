@@ -146,11 +146,11 @@ class DashboardController extends GetxController with CommonMixin {
         }
         isLoading.value = false;
       } else {
-        hasError.value = true;
+        // hasError.value = true;
         showAppToastMessage(dashboardData.value.message, true);
       }
     } catch (e) {
-      hasError.value = true;
+      // hasError.value = true;
       String errorMessage = AppExceptionHandler.handleError(e);
       showAppToastMessage(errorMessage, true);
     } finally {

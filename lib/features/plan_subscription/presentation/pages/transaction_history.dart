@@ -90,11 +90,11 @@ class TransactionHistory extends GetView<TransactionHistoryController>
 
   _buildTransactionCard(TransactionModel transaction) {
     return CommonContainer(
-      shadowOpacity: 0.5,
+      shadowOpacity: 0.3,
       width: 1.sw,
 
       borderRaduis: 6.r,
-      margin: EdgeInsets.only(top: 8.h, left: 4.w, right: 4.w),
+      margin: EdgeInsets.only(top: 3.h, left: 4.w, right: 4.w),
       bordercolor: AppColors.grey200,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),

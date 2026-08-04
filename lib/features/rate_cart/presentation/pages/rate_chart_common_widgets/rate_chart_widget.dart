@@ -27,7 +27,7 @@ class RateChartWidget extends StatelessWidget {
     return InkWell(
       onTap: () {
         AppState.currentRateChartForDetailsPage = rateChart;
-        AppNavigation.goToRateChartDetailsPage(rateChart);
+        AppNavigation.goToRateChartDetailsPage(rateChart, rateChart.name);
       },
       child: Stack(
         children: [

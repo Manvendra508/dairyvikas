@@ -185,6 +185,8 @@ const Map<String, String> enUS = {
   "show_selected": "Show Selected",
   "unassign": "Unassign",
   "search_supplier": "Search supplier by name or code",
+  "assign_rate_chart_confirmation":
+      "A rate chart is already assigned to this dairy for the same milk type. Do you want to replace it?",
   "milk_type": "Milk Type: ",
   "cow_milk": "Cow Milk",
   "buffalo_milk": "Buffalo Milk",
@@ -203,6 +205,8 @@ const Map<String, String> enUS = {
   "evening": "Evening",
   "morning_evening": "Morning+Evening",
   "yes": "Yes",
+  "no": "No",
+  "replace_chart": "Replace Chart",
   "cancel": "Cancel",
   "cow_buffalo": "Cow + Buffalo",
   "cow": "Cow",
@@ -462,6 +466,7 @@ const Map<String, String> enUS = {
   "pending": "Pending",
   "amount_dynamic": "Amount: @amount",
   "mark_paid": "Mark Paid",
+  "mark_unpaid": "Mark Unpaid",
   "no_invoice_found": "No Invoice Found!",
   "search_invoice_by_name_or_code": "Search Invoice by Name or Amount",
   "genrate_invoice": "Genrate Invoice",
@@ -522,6 +527,7 @@ const Map<String, String> enUS = {
   // Subscripiton plan strings
   "subscriptions": "Subscriptions Plans",
   "choose_plan": "Choose Your Plan",
+  "free_trial_plan": "Free Trial Plan",
   "choose_plan_msg":
       "Choose Your favorite plan and grow your bussiness with Dairy Vikas",
   "no_plans_found": "No Plans Found!",

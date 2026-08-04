@@ -11,7 +11,8 @@ import 'package:get/get.dart';
 
 class AuthService with CommonMixin {
   static Future<bool> isLoggedIn() async {
-    return await SecureStorage.instance.getVendorLoginStatus() == 'true';
+    String loginStatus = await SecureStorage.instance.getVendorLoginStatus();
+    return loginStatus == 'true';
   }
 
   static Future<bool> isDairyDetailsSaved() async {
@@ -82,9 +83,13 @@ class AuthService with CommonMixin {
 
   logoutUserLocal() async {
     SharedPrefsService.instance.clear();
+    await SecureStorage.instance.saveVendorLoginStatus('false');
+    String ls = await SecureStorage.instance.getVendorLoginStatus();
+    print(ls);
     await SecureStorage.instance.deleteAllExcept();
     // clear appstate data
     AppState.dairyName = 'unavailable';
+
     AppState.vendorDistrict = 'unknown';
     AppState.vendorState = 'unknown';
     AppState.chartIdForassignablesupplierScreen = '';

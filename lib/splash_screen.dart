@@ -5,6 +5,7 @@ import 'package:DairyVikas/app/theme/app_colors.dart';
 import 'package:DairyVikas/common/common_widget/app_update_widget.dart';
 import 'package:DairyVikas/common/common_widget/text_widget.dart';
 import 'package:DairyVikas/core/local_datasources/app_state.dart';
+import 'package:DairyVikas/core/local_datasources/local_storage_service.dart';
 import 'package:DairyVikas/core/network/api_endpoints.dart';
 import 'package:DairyVikas/core/other_services/auth_service.dart';
 import 'package:DairyVikas/core/utils/app_navigation.dart';
@@ -43,13 +44,15 @@ class _SplashScreenState extends State<SplashScreen> {
     } else {
       Future.delayed(const Duration(seconds: 2), () async {
         final isLoggedIn = await AuthService.isLoggedIn();
-        final hasDairyDetailsSaved = await AuthService.isDairyDetailsSaved();
+        // final hasDairyDetailsSaved = await AuthService.isDairyDetailsSaved();
+        final isDairyAdded = await SharedPrefsService.instance
+            .getIsDairyAdded();
 
         if (isLoggedIn) {
-          if (hasDairyDetailsSaved) {
-            AppNavigation.goToDairyCenterSettingsPage();
-          } else {
+          if (isDairyAdded) {
             AppNavigation.goToDashboardPage();
+          } else {
+            AppNavigation.goToDairyCenterDetailsPage(false);
           }
         } else {
           AppNavigation.goToLoginAndRemoveAll();

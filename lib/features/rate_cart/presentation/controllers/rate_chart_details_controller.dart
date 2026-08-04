@@ -74,10 +74,15 @@ class RateChartDetailsController extends GetxController with CommonMixin {
       } else {
         showAppToastMessage(response['message'], true);
       }
-    } catch (e) {
-      String errorMessage = AppExceptionHandler.handleError(e);
+      // } catch (e) {
+      //   print(e);
+      //   String errorMessage = AppExceptionHandler.handleError(e);
 
-      showAppToastMessage(errorMessage, true);
+      //   showAppToastMessage(errorMessage, true);
+      // }
+    } catch (e, s) {
+      debugPrint('ERROR: $e');
+      debugPrintStack(stackTrace: s);
     }
   }
 

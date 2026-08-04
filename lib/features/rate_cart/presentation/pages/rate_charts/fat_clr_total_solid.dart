@@ -68,6 +68,7 @@ class TotalSolidChartFatClrPageState extends State<TotalSolidChartFatClrPage>
       null,
 
       [steps],
+      context,
     );
   }
 

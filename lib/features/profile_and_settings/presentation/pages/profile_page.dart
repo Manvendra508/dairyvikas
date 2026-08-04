@@ -481,8 +481,9 @@ class ProfilePage extends GetView<ProfileController> with CommonMixin {
                               ),
                               Gap.verticalGap(2),
                               TextWidget(
-                                text:
-                                    '${_profileController.currentPlan.meta['months']} Months',
+                                text: _profileController.currentPlan.price == 0
+                                    ? 'free_trial_plan'
+                                    : '${_profileController.currentPlan.meta['months']} Months',
                                 fontSize: 20.sp,
                                 fontWeight: FontWeight.w700,
                                 textColor: AppColors.grey800,

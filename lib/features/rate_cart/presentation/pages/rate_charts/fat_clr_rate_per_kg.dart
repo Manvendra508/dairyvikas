@@ -164,6 +164,7 @@ class FatClrRatePerKgState extends State<FatClrRatePerKg> with CommonMixin {
       clrBonus,
 
       widget.isCrlOnly ? [clrSteps] : [fatSteps, clrSteps],
+      context,
     );
   }
 

@@ -31,6 +31,14 @@ class SharedPrefsService {
     return _prefs.getString('dairy_id');
   }
 
+  Future<void> saveIsDairyAdded(bool isDairyAdded) async {
+    await _prefs.setBool('isDairyAdded', isDairyAdded);
+  }
+
+  Future<bool> getIsDairyAdded() async {
+    return _prefs.getBool('isDairyAdded') ?? false;
+  }
+
   Future<void> savedairyDetailsSikped(bool skip) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('dairy_details_skiped', skip);

@@ -212,6 +212,7 @@ class ProfileController extends GetxController
 
   void startPlanProgress({required int totalDays, required int remainingDays}) {
     double target = remainingDays / totalDays;
+    target = target.clamp(0.0, 1.0);
 
     animation = Tween<double>(begin: 0, end: target).animate(
       CurvedAnimation(parent: animationController, curve: Curves.easeInOut),

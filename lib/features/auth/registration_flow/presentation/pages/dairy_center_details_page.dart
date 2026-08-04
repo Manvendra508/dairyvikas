@@ -12,6 +12,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import '../../data/model/dairy_setting_data_model.dart';
 import '../controllers/dairy_center_details_controller.dart';
 
 class DairyCenterDetailsPage extends GetView<DairyCenterDetailsController> {
@@ -42,9 +43,9 @@ class DairyCenterDetailsPage extends GetView<DairyCenterDetailsController> {
                 DairyVikasAppBar(
                   title: 'dairy_center_detail',
                   showLeading: false,
-                  trailingWidget: isFromDashboard
-                      ? null
-                      : _buildSkipTextButton(),
+                  // trailingWidget: isFromDashboard
+                  //     ? null
+                  //     : _buildSkipTextButton(),
                 ),
                 Gap.verticalGap(12.h),
 
@@ -327,10 +328,23 @@ class DairyCenterDetailsPage extends GetView<DairyCenterDetailsController> {
             ),
           ),
           Gap.verticalGap(10),
+          _buildDropdownFieldForDairySetting(
+            hint: 'select_collection_type',
+            items: _dairyCenterDetailsController.collectionTypes,
+
+            id: 1,
+          ),
+          Gap.verticalGap(10),
+          _buildDropdownFieldForDairySetting(
+            hint: 'select_payment_period',
+            items: _dairyCenterDetailsController.paymentPeriods,
+
+            id: 4,
+          ),
 
           Gap.verticalGap(25),
           InkWell(
-            onTap: () => _dairyCenterDetailsController.saveDairyInfoInLocal(),
+            onTap: () => _dairyCenterDetailsController.addDairyDetails(),
             child: AppButton(
               title: 'next',
               buttonFontWeight: FontWeight.w600,
@@ -340,6 +354,65 @@ class DairyCenterDetailsPage extends GetView<DairyCenterDetailsController> {
           ),
         ],
       ),
+    );
+  }
+
+  _buildDropdownFieldForDairySetting({
+    required String hint,
+    required List<DairySettingDataModel> items,
+
+    required int id,
+  }) {
+    return GetBuilder<DairyCenterDetailsController>(
+      builder: (controller) {
+        // Pick selected value based on ID
+        DairySettingDataModel selectedValue;
+
+        if (id == 1) {
+          selectedValue = controller.selectedCollectionTypeId;
+        } else if (id == 2) {
+          selectedValue = controller.selectedMilkTypeId;
+        } else if (id == 3) {
+          selectedValue = controller.selectedCollectionShiftId;
+        } else {
+          selectedValue = controller.selectedPaymentPeriodId;
+        }
+        return Container(
+          padding: EdgeInsets.symmetric(vertical: 2.h, horizontal: 7.w),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12.r),
+            border: Border.all(width: 0.8, color: AppColors.lightBorder),
+          ),
+          child: DropdownButtonHideUnderline(
+            child: DropdownButton<DairySettingDataModel>(
+              value: selectedValue.id == '0' ? null : selectedValue,
+              isExpanded: true,
+              hint: TextWidget(
+                text: hint,
+                fontSize: 12.sp,
+                textColor: AppColors.textLight,
+              ),
+              items: items.map((e) {
+                return DropdownMenuItem(
+                  value: e,
+                  child: TextWidget(
+                    text: e.name,
+                    textColor: AppColors.grey700,
+                    fontSize: 13.5.sp,
+                    fontWeight: FontWeight.w500,
+                  ),
+                );
+              }).toList(),
+              onChanged: (value) {
+                if (value == null) return;
+
+                _dairyCenterDetailsController.selectValues(id, value);
+              },
+              icon: Icon(Icons.keyboard_arrow_down, color: AppColors.textLight),
+            ),
+          ),
+        );
+      },
     );
   }
 
